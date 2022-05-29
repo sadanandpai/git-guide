@@ -18,11 +18,10 @@
 
 By default the main/master branch is active. Ask which branch has the relevant code
 
-- Open your terminal
-- Navigate inside the cloned folder
+- Navigate inside the cloned folder `cd repo<-name>`
 - Enter the command `git checkout <branch-name>`
 
-<img width="654" alt="image" src="https://user-images.githubusercontent.com/12962887/170861883-4b067d03-e986-43b8-80ef-bdf10d085cb0.png">
+<img width="567" alt="image" src="https://user-images.githubusercontent.com/12962887/170878556-4a48dd7c-96f6-43e7-b317-32c78ad24fcd.png">
 
 #### 3. Someone has made few changes in the code and asked me to pull those changes. What should I do?
 
