@@ -61,3 +61,16 @@ If it is not allowing to delete the branch, then use the command`git branch -D <
 
 <img width="610" alt="image" src="https://user-images.githubusercontent.com/12962887/170863291-edb848bf-5994-431a-b367-44e40a8ddf61.png">
 
+#### 7. I have made some changes to the code on the branch on which all of the developers are working. How can my make my changes published?
+
+To move the changes from your local machine to online (called origin), follow below steps in your terminal
+
+- `git add *`
+- `git commit -m "<some commit message>"`
+- `git push`
+
+#### 8. When I am trying to push my changes, but getting a rejected message. I am stuck!!!
+
+The rejection could be because the remote branch might be ahead of the local branch. Pull the changes from remote and then proceed
+
+- 
