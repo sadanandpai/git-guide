@@ -68,6 +68,8 @@ To move the changes from your local machine to online (called origin), follow be
 - `git commit -m "<some commit message>"`
 - `git push`
 
+<img width="828" alt="image" src="https://user-images.githubusercontent.com/12962887/170865776-dea5f82e-6ae6-4f60-b70a-0fc8d37fd741.png">
+
 #### 8. When I am trying to push my changes, but getting a rejected message. I am stuck!!!
 
 The rejection could be because the remote branch might be ahead of the local branch. Pull the changes from remote and then proceed
