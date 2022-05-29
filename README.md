@@ -1,8 +1,10 @@
-# git-lean-guide
+<div align="center">
+  <h1>Git Lean Guide</h1>
+  Lean but practical guide to every day Git commands
+  
+  <img width="654" alt="image" src="https://user-images.githubusercontent.com/12962887/170864903-b331fc72-71f6-429b-81d4-b5cceb9d4b9f.png" />
+</div>
 
-Lean but practical guide to Git
-
----
 
 #### 1. I want to clone a project and start going through the code
 
