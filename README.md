@@ -70,7 +70,16 @@ To move the changes from your local machine to online (called origin), follow be
 
 <img width="828" alt="image" src="https://user-images.githubusercontent.com/12962887/170865776-dea5f82e-6ae6-4f60-b70a-0fc8d37fd741.png">
 
-#### 8. When I am trying to push my changes, but getting a rejected message. I am stuck!!!
+#### 8. What if I want only some of files added and pushed instead of all the changes?
+
+You can add files by mentioning the file/files with relative or fulll path. You can add file one by one or multiple files at a time using the commands
+
+- `git add <file-name>`
+- `git add <file1-name> <file2-name>`
+
+<img width="589" alt="image" src="https://user-images.githubusercontent.com/12962887/170866895-9d9c2f38-dea2-4709-b5ad-dc7764dfa6f5.png">
+
+#### 9. When I am trying to push my changes, but getting a rejected message. I am stuck!!!
 
 The rejection could be because the remote branch might be ahead of the local branch. Pull the changes from remote and then proceed
 
