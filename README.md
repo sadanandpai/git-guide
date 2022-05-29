@@ -5,7 +5,6 @@
   <img width="654" alt="image" src="https://user-images.githubusercontent.com/12962887/170864903-b331fc72-71f6-429b-81d4-b5cceb9d4b9f.png" />
 </div>
 
-
 #### 1. I want to clone a project and start going through the code
 
 - Get the repo url/link
@@ -73,4 +72,4 @@ To move the changes from your local machine to online (called origin), follow be
 
 The rejection could be because the remote branch might be ahead of the local branch. Pull the changes from remote and then proceed
 
-- 
+- TODO
