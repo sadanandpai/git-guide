@@ -33,6 +33,8 @@ By default the main/master branch is active. Ask which branch has the relevant c
 
 - Enter the command `git reset --hard`
 
+To reset a single file, run the command `git checkout HEAD -- <file-name>`
+
 #### 5. I have commented and formatted some code for my reference and I want to keep a copy of this with me for personal use.
 
 The changes you have done which you want keep with you only can be created as a separate branch
@@ -78,8 +80,8 @@ You can add files by mentioning the file/files with relative or fulll path. You 
 
 <img width="589" alt="image" src="https://user-images.githubusercontent.com/12962887/170866895-9d9c2f38-dea2-4709-b5ad-dc7764dfa6f5.png">
 
-#### 9. When I am trying to push my changes, but getting a rejected message. I am stuck!!!
+Similarly, to unstage a file use the command `git reset <file>`
 
-The rejection could be because the remote branch might be ahead of the local branch. Pull the changes from remote and then proceed
+#### 9. When I am trying to push my changes, getting a rejected message. I am stuck!!!
 
-- TODO
+The rejection could be because the remote branch might be ahead of the local branch. Different techniques can be used here to achieve sync
