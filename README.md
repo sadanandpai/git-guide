@@ -21,13 +21,13 @@ By default the main/master branch is active. Ask which branch has the relevant c
 - Navigate inside the cloned folder `cd repo<-name>`
 - Enter the command `git checkout <branch-name>`
 
-<img width="567" alt="image" src="https://user-images.githubusercontent.com/12962887/170878556-4a48dd7c-96f6-43e7-b317-32c78ad24fcd.png">
+<img width="654" alt="image" src="https://user-images.githubusercontent.com/12962887/173235836-dfc2039c-d412-4ca6-b4d4-580ef557c8c6.png" />
 
 #### 3. Someone has made few changes in the code and asked me to pull those changes. What should I do?
 
 - Enter the command `git pull`
 
-<img width="654" alt="image" src="https://user-images.githubusercontent.com/12962887/170861829-b9e2adbf-b960-4322-a7b5-6410ba354e13.png">
+<img width="587" alt="image" src="https://user-images.githubusercontent.com/12962887/173235993-7f2ba191-d9bb-4a78-aec3-35f326e46325.png">
 
 #### 4. I have modified/formatted some code while going through. Now I want the code to be back to the state as it was.
 
@@ -48,7 +48,7 @@ To see your changes `git checkout -b <my-personal-branch-name>`
 
 `my-personal-branch-name` is your local branch and not available for anyone else
 
-<img width="610" alt="image" src="https://user-images.githubusercontent.com/12962887/170863218-681fc59d-5d2d-4021-8028-2a7b5d7d34aa.png">
+<img width="555" alt="image" src="https://user-images.githubusercontent.com/12962887/173236172-30ccb855-0b2c-47ae-a711-152f20bc3b67.png">
 
 #### 6. What if I do not want one of my branch anymore?
 
@@ -59,7 +59,7 @@ You can use the below commands to delete any branch in your local. But be sure t
 
 If it is not allowing to delete the branch, then use the command`git branch -D <branch-name>`
 
-<img width="610" alt="image" src="https://user-images.githubusercontent.com/12962887/170863291-edb848bf-5994-431a-b367-44e40a8ddf61.png">
+<img width="797" alt="image" src="https://user-images.githubusercontent.com/12962887/173236283-58ff17a0-6d01-424a-9117-0e4d0e13e6fa.png">
 
 #### 7. I have made some changes to the code on the branch on which all of the developers are working. How can my make my changes published?
 
@@ -85,5 +85,13 @@ Similarly, to unstage a file use the command `git reset <file>`
 #### 9. When I am trying to push my changes, getting a rejected message. I am stuck!!!
 
 The rejection could be because the remote branch might be ahead of the local branch. Different techniques can be used here to achieve sync
+Undo your commit first. Then pull the remote changes & push your changes
+
+- Undo your commit by running `git reset --soft HEAD~1` (1 represents undoing 1 commit)
+- `git pull`
+- `git commit -m "<some commit message>"` (commit your changes again)
+- `git push`
+
+![image](https://user-images.githubusercontent.com/12962887/173234060-43c76e48-14cb-4680-bdcd-aaa9cd0e64d4.png)
 
 #### 10. I have followed the above procedure. But when I pulled the changes, it is showing the conflicts. How can I proceed?
