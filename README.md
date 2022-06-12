@@ -85,3 +85,5 @@ Similarly, to unstage a file use the command `git reset <file>`
 #### 9. When I am trying to push my changes, getting a rejected message. I am stuck!!!
 
 The rejection could be because the remote branch might be ahead of the local branch. Different techniques can be used here to achieve sync
+
+#### 10. I have followed the above procedure. But when I pulled the changes, it is showing the conflicts. How can I proceed?
