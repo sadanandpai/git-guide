@@ -86,7 +86,7 @@ Similarly, to unstage a file use the command `git reset <file>`
 
 If you are making some changes and need to move on to some other work and then come back, in such case either you can commit or store (stash) the changes.
 
-- `git stash save '<name of the change>`
+- `git stash save '<name of the change>` -u
 
 To retrieve the changes once you are back,
 
@@ -94,9 +94,18 @@ To retrieve the changes once you are back,
 
 where n is the stash number. To get the list of stashes `git stash list`
 
-<img width="818" alt="image" src="https://user-images.githubusercontent.com/12962887/180604593-4849465d-80ff-4ed0-b2a2-9b400932100e.png">
+<img width="819" alt="image" src="https://user-images.githubusercontent.com/12962887/180613172-aa7aca8e-a269-4af4-94dc-9a8055962b91.png">
 
-#### 10. I have committed my changes. How can I undo my change?
+#### 10. After applying the stash, I am getting a lot of conflicts in the code.
+
+If there are changes in the code on the region of the stashed code, it is expected to get the conflicts. You will have manually resolve and the conflicts carefully.
+
+<img width="596" alt="image" src="https://user-images.githubusercontent.com/12962887/180613095-a8e08426-1d15-4a31-956b-55bfdfbdb84d.png">
+
+Below is the view of the VSCode, which helps in easily resolving the conflicts.
+![image](https://user-images.githubusercontent.com/12962887/180612978-fffd4307-0045-4fd3-b52c-394d1d9a0059.png)
+
+#### 11. I have committed my changes. How can I undo my change?
 
 You can undo the commit resetting the HEAD. If you just want to undo the commit but let the changes be present then use `soft` attribute else if you do want the commit along with the changes then use `hard` attribute
 
@@ -104,7 +113,7 @@ You can undo the commit resetting the HEAD. If you just want to undo the commit 
 
 - `git reset --hard HEAD~1` (undo with changes removed)
 
-#### 11. When I am trying to push my changes, getting a rejected message. I am stuck!!!
+#### 12. When I am trying to push my changes, getting a rejected message. I am stuck!!!
 
 The rejection could be because the remote branch might be ahead of the local branch. Different techniques can be used here to achieve sync
 Undo your commit first. Then pull the remote changes & push your changes
@@ -116,4 +125,4 @@ Undo your commit first. Then pull the remote changes & push your changes
 
 ![image](https://user-images.githubusercontent.com/12962887/173234060-43c76e48-14cb-4680-bdcd-aaa9cd0e64d4.png)
 
-#### 10. I have followed the above procedure. But when I pulled the changes, it is showing the conflicts. How can I proceed?
+#### 13. I have followed the above procedure. But when I pulled the changes, it is showing the conflicts. How can I proceed?
