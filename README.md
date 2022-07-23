@@ -145,7 +145,7 @@ Yes. You can update the commit by amending your changes.
 
 To update with new commit message `git commit --amend -m 'My new commit message'` (This command can also be used to simply update the previous commit message without any code modifications)
 
-`--no-edit` is used to avoid the prompt to edit the commit message. If you want to modify the commit message as well during the update of the commit, then do not include `-m` along with your commit message 
+`--no-edit` is used to avoid the prompt to edit the commit message. If you want to modify the commit message as well during the update of the commit, then do not include `-m` along with your commit message
 
 <img width="587" alt="image" src="https://user-images.githubusercontent.com/12962887/180615625-baa2b6f5-2ca5-454a-bfbf-d7115537cdbf.png">
 
@@ -241,3 +241,6 @@ Undo your commit first. Then pull the remote changes & push your changes
 <br>
 
 ### 15. I have followed the above procedure. But when I pulled the changes, it is showing the conflicts. How can I proceed?
+
+.
+.
