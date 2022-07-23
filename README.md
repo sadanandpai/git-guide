@@ -82,7 +82,21 @@ You can add files by mentioning the file/files with relative or fulll path. You 
 
 Similarly, to unstage a file use the command `git reset <file>`
 
-#### 9. When I am trying to push my changes, getting a rejected message. I am stuck!!!
+#### 9. I have made some changes in a branch. But it is partially completely. How can I continue from the same point in future?
+
+If you are making some changes and need to move on to some other work and then come back, in such case either you can commit or store (stash) the changes.
+
+- `git stash save '<name of the change>`
+
+To retrieve the changes once you are back,
+
+- `git stash apply <n>`
+
+where n is the stash number. To get the list of stashes `git stash list`
+
+<img width="818" alt="image" src="https://user-images.githubusercontent.com/12962887/180604593-4849465d-80ff-4ed0-b2a2-9b400932100e.png">
+
+#### 11. When I am trying to push my changes, getting a rejected message. I am stuck!!!
 
 The rejection could be because the remote branch might be ahead of the local branch. Different techniques can be used here to achieve sync
 Undo your commit first. Then pull the remote changes & push your changes
