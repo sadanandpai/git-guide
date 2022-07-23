@@ -136,7 +136,44 @@ Similarly, to unstage a file use the command `git reset <file>`
 
 <br>
 
-### 9. I have made some changes in a branch. But it is partially completely. How can I continue from the same point in future?
+### 9. I just committed but forgot to add few files to the commit. Is there a to update the same commit with some modifications?
+
+Yes. You can update the commit by amending your changes.
+
+- `git add <file-name> <file-name> ...`
+- `git commit --amend --no-edit` or `git commit --amend`
+
+`--no-edit` is used to avoid the prompt to edit the commit message. If you want to modify the commit message as well during the update of the commit, then do not include `--no-edit`
+
+Also, if you just want to update the previous commit message without any file/code modifications, then
+
+`git commit --amend`
+
+The `amend` updates the previous commit without creating new one on top of previous. (in reality, Git discards the previous commit and replaces it with new commit)
+<br>
+<br>
+
+---
+
+<br>
+
+### 10. I created a commit and also pushed it. Is it possible to update that commit now?
+
+Yes. You can update the commit even after it is pushed. Everything will follow as mentioned in the previous question, but you will have to force push.
+
+- `git add <file-name> <file-name> ...`
+- `git commit --amend --no-edit` or `git commit --amend`
+- `git push -f` or `git push --force`
+
+You need to be very careful while pushing forcefully, as it may eliminate other commits if someone has done in between. Make sure you are working on the branch and no one else is similutaneous working on the same or branching out from the branch at your commit.
+<br>
+<br>
+
+---
+
+<br>
+
+### 11. I have made some changes in a branch. But it is partially completely. How can I continue from the same point in future?
 
 If you are making some changes and need to move on to some other work and then come back, in such case either you can commit or store (stash) the changes.
 
@@ -156,7 +193,7 @@ where n is the stash number. To get the list of stashes `git stash list`
 
 <br>
 
-### 10. After applying the stash, I am getting a lot of conflicts in the code.
+### 12. After applying the stash, I am getting a lot of conflicts in the code.
 
 If there are changes in the code on the region of the stashed code, it is expected to get the conflicts. You will have manually resolve and the conflicts carefully.
 
@@ -171,7 +208,7 @@ Below is the view of the VSCode, which helps in easily resolving the conflicts.
 
 <br>
 
-### 11. I have committed my changes. How can I undo my change?
+### 13. I have committed my changes. How can I undo my change?
 
 You can undo the commit resetting the HEAD. If you just want to undo the commit but let the changes be present then use `soft` attribute else if you do want the commit along with the changes then use `hard` attribute
 
@@ -185,7 +222,7 @@ You can undo the commit resetting the HEAD. If you just want to undo the commit 
 
 <br>
 
-### 12. When I am trying to push my changes, getting a rejected message. I am stuck!!!
+### 14. When I am trying to push my changes, getting a rejected message. I am stuck!!!
 
 The rejection could be because the remote branch might be ahead of the local branch. Different techniques can be used here to achieve sync
 Undo your commit first. Then pull the remote changes & push your changes
@@ -203,4 +240,4 @@ Undo your commit first. Then pull the remote changes & push your changes
 
 <br>
 
-### 13. I have followed the above procedure. But when I pulled the changes, it is showing the conflicts. How can I proceed?
+### 15. I have followed the above procedure. But when I pulled the changes, it is showing the conflicts. How can I proceed?
