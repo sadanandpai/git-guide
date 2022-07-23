@@ -165,7 +165,9 @@ Yes. You can update the commit even after it is pushed. Everything will follow a
 - `git commit --amend --no-edit` or `git commit --amend`
 - `git push -f` or `git push --force`
 
-You need to be very careful while pushing forcefully, as it may eliminate other commits if someone has done in between. Make sure you are working on the branch and no one else is similutaneous working on the same or branching out from the branch at your commit.
+<img width="783" alt="image" src="https://user-images.githubusercontent.com/12962887/180615816-743abb81-765c-4723-b44f-faf00da3a820.png">
+
+Note: You need to be very careful while pushing forcefully, as it may eliminate other commits if someone has done in between. Make sure you are working on the branch and no one else is similutaneous working on the same or branching out from the branch at your commit.
 <br>
 <br>
 
@@ -241,6 +243,3 @@ Undo your commit first. Then pull the remote changes & push your changes
 <br>
 
 ### 15. I have followed the above procedure. But when I pulled the changes, it is showing the conflicts. How can I proceed?
-
-.
-.
