@@ -96,6 +96,14 @@ where n is the stash number. To get the list of stashes `git stash list`
 
 <img width="818" alt="image" src="https://user-images.githubusercontent.com/12962887/180604593-4849465d-80ff-4ed0-b2a2-9b400932100e.png">
 
+#### 10. I have committed my changes. How can I undo my change?
+
+You can undo the commit resetting the HEAD. If you just want to undo the commit but let the changes be present then use `soft` attribute else if you do want the commit along with the changes then use `hard` attribute
+
+- `git reset --soft HEAD~1` (undo with changes preserved)
+
+- `git reset --hard HEAD~1` (undo with changes removed)
+
 #### 11. When I am trying to push my changes, getting a rejected message. I am stuck!!!
 
 The rejection could be because the remote branch might be ahead of the local branch. Different techniques can be used here to achieve sync
