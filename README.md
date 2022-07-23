@@ -73,8 +73,8 @@ The changes you have done which you want keep with you only can be created as a 
 - Stage all the changes using the command `git add *`
 - Then save your changes by the command `git commit -m "<some commit message>"`
 
-To go back to the original branch enter the command `git checkout -b <original-branch-name>`
-To see your changes `git checkout -b <my-personal-branch-name>`
+To go back to the original branch enter the command `git checkout <original-branch-name>`
+To see your changes `git checkout <my-personal-branch-name>`
 
 `my-personal-branch-name` is your local branch and not available for anyone else
 
@@ -107,9 +107,9 @@ If it is not allowing to delete the branch, then use the command`git branch -D <
 
 To move the changes from your local machine to online (called origin), follow below steps in your terminal
 
-- `git add *`
-- `git commit -m "<some commit message>"`
-- `git push`
+- Add the changed files `git add *`
+- Commit the changes `git commit -m "<some commit message>"`
+- Push the changes `git push`
 
 <img width="828" alt="image" src="https://user-images.githubusercontent.com/12962887/170865776-dea5f82e-6ae6-4f60-b70a-0fc8d37fd741.png">
 <br>
@@ -123,8 +123,8 @@ To move the changes from your local machine to online (called origin), follow be
 
 You can add files by mentioning the file/files with relative or fulll path. You can add file one by one or multiple files at a time using the commands
 
-- `git add <file-name>`
-- `git add <file1-name> <file2-name>`
+- Add single file `git add <file-name>`
+- Add multiple files `git add <file1-name> <file2-name>`
 
 <img width="589" alt="image" src="https://user-images.githubusercontent.com/12962887/170866895-9d9c2f38-dea2-4709-b5ad-dc7764dfa6f5.png">
 
@@ -140,16 +140,16 @@ Similarly, to unstage a file use the command `git reset <file>`
 
 Yes. You can update the commit by amending your changes.
 
-- `git add <file-name> <file-name> ...`
-- `git commit --amend --no-edit` or `git commit --amend`
+- To add files `git add <file-name> <file-name> ...`
+- To update the commit `git commit --amend --no-edit`
 
-`--no-edit` is used to avoid the prompt to edit the commit message. If you want to modify the commit message as well during the update of the commit, then do not include `--no-edit`
+To update with new commit message `git commit --amend -m 'My new commit message'` (This command can also be used to simply update the previous commit message without any code modifications)
 
-Also, if you just want to update the previous commit message without any file/code modifications, then
+`--no-edit` is used to avoid the prompt to edit the commit message. If you want to modify the commit message as well during the update of the commit, then do not include `-m` along with your commit message 
 
-`git commit --amend`
+<img width="587" alt="image" src="https://user-images.githubusercontent.com/12962887/180615625-baa2b6f5-2ca5-454a-bfbf-d7115537cdbf.png">
 
-The `amend` updates the previous commit without creating new one on top of previous. (in reality, Git discards the previous commit and replaces it with new commit)
+Note: The `amend` updates the previous commit without creating new one on top of previous. (in reality, Git discards the previous commit and replaces it with new commit)
 <br>
 <br>
 
