@@ -266,10 +266,10 @@ Yes. You can undo your commit and stash it. Then pull the changes and apply the 
 - Commit back your changes `git commit -m "<same commit message>"` (commit your changes again)
 - Push the changes `git push`
 
-If pull is successful,
-<img width="982" alt="image" src="https://user-images.githubusercontent.com/12962887/180638368-4cc0adf6-354e-473c-81da-5495889d4575.png">
+#### If pull is successful,
+<img width="982" alt="image" src="https://user-images.githubusercontent.com/12962887/180638669-24fcfc24-babf-4200-94c6-2cddcd4242c2.png">
 
-If pull is unsuccessful,
+#### If pull is unsuccessful,
 ![Screenshot 2022-07-24 at 1 22 25 PM](https://user-images.githubusercontent.com/12962887/180637754-4d4daaf9-d1f9-452a-95cb-8af6e0eac52e.png)
 
 Note: This technique can be used for multiple commits as well. But when you commit them back it will become a single commit. If you are doing it, be aware about this note.
