@@ -236,7 +236,6 @@ The rejection could be because the remote branch might be ahead of the local bra
 
 If there are conflicts, then resolve them manually to proceed ahead as shown below.
 
-
 ### 15. I have created single or multiple commits in my local and while pushing getting a rejected message. Is there a way to push the changes without a merge?
 
 Yes. You can either undo the commits and then pull or rebase the changes.
@@ -258,3 +257,4 @@ Undo your commit first. Then pull the remote changes & push your changes
 ### 15. I have followed the above procedure. But when I pulled the changes, it is showing the conflicts. How can I proceed?
 
 -> Test
+<<<<>>>>
