@@ -96,6 +96,55 @@ Similarly, to unstage a file use the command `git reset <file>`
 
 <br>
 
+### 7. I have committed my changes. How can I undo my change?
+
+You can undo the commit resetting the HEAD. If you just want to undo the commit but let the changes be present then use `soft` attribute else if you do want the commit along with the changes then use `hard` attribute
+
+- `git reset --soft HEAD~1` (undo with changes preserved)
+- `git reset --hard HEAD~1` (undo with changes removed)
+
+<br>
+<br>
+
+---
+
+<br>
+
+### 13. I have made some changes in the branch. Also I wanted to pull the new changes. But it is not working.
+
+The command `git pull` may not work if the changes are done by someone else to the same files by to which you have also modified.
+
+- `git stash save '<name of the change>` -u
+
+To retrieve the changes once you are back,
+
+- `git stash apply <n>`
+
+where n is the stash number. To get the list of stashes `git stash list`
+
+<img width="819" alt="image" src="https://user-images.githubusercontent.com/12962887/180613172-aa7aca8e-a269-4af4-94dc-9a8055962b91.png">
+<br>
+<br>
+
+---
+
+<br>
+
+### 14. After applying the stash, I am getting a lot of conflicts in the code.
+
+If there are changes in the code on the region of the stashed code, it is expected to get the conflicts. You will have manually resolve and the conflicts carefully.
+
+<img width="596" alt="image" src="https://user-images.githubusercontent.com/12962887/180613095-a8e08426-1d15-4a31-956b-55bfdfbdb84d.png">
+
+Below is the view of the VSCode, which helps in easily resolving the conflicts.
+![image](https://user-images.githubusercontent.com/12962887/180612978-fffd4307-0045-4fd3-b52c-394d1d9a0059.png)
+<br>
+<br>
+
+---
+
+<br>
+
 ### 7. I have made some code changes. But I want to commit to a new separatte branch.
 
 You can create a separate branch out of the current branch and commit it. This works both if you have already made changes or yet to start making changes.
@@ -208,55 +257,6 @@ Yes. You can update the commit even after it is pushed. Everything will follow a
 Note: You need to be very careful while pushing forcefully, as it may eliminate other commits if someone has done in between. Make sure you are working on the branch and no one else is similutaneous working on the same or branching out from the branch at your commit.
 <br>
 <br>
-
----
-
-<br>
-
-### 13. I have made some changes in a branch. But it is partially complete. How can I continue from the same point in future?
-
-If you are making some changes and need to move on to some other work and then come back, in such case either you can commit or store (stash) the changes.
-
-- `git stash save '<name of the change>` -u
-
-To retrieve the changes once you are back,
-
-- `git stash apply <n>`
-
-where n is the stash number. To get the list of stashes `git stash list`
-
-<img width="819" alt="image" src="https://user-images.githubusercontent.com/12962887/180613172-aa7aca8e-a269-4af4-94dc-9a8055962b91.png">
-<br>
-<br>
-
----
-
-<br>
-
-### 14. After applying the stash, I am getting a lot of conflicts in the code.
-
-If there are changes in the code on the region of the stashed code, it is expected to get the conflicts. You will have manually resolve and the conflicts carefully.
-
-<img width="596" alt="image" src="https://user-images.githubusercontent.com/12962887/180613095-a8e08426-1d15-4a31-956b-55bfdfbdb84d.png">
-
-Below is the view of the VSCode, which helps in easily resolving the conflicts.
-![image](https://user-images.githubusercontent.com/12962887/180612978-fffd4307-0045-4fd3-b52c-394d1d9a0059.png)
-<br>
-<br>
-
----
-
-<br>
-
-### 15. I have committed my changes. How can I undo my change?
-
-You can undo the commit resetting the HEAD. If you just want to undo the commit but let the changes be present then use `soft` attribute else if you do want the commit along with the changes then use `hard` attribute
-
-- `git reset --soft HEAD~1` (undo with changes preserved)
-
-- `git reset --hard HEAD~1` (undo with changes removed)
-  <br>
-  <br>
 
 ---
 
