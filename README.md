@@ -253,16 +253,32 @@ If there are code changes on the smae region from multiple commits, the conflict
 
 <br>
 
-### 16. I followed the above steps, but getting conflicts after git pull.
+### 16. I have created single commit. When I am trying to push my changes, getting a rejected message. Can I pull the changes without creating a merge commit?
 
-If there are code changes on the smae region from multiple commits, the conflicts will occur. You need resolve all the conflicts and proceed.
+Yes. You can undo your commit and stash it. Then pull the changes and apply the stash.
 
 - Undo your commit by running `git reset --soft HEAD~1` (1 represents undoing 1 commit)
-- `git pull`
-- `git commit -m "<some commit message>"` (commit your changes again)
-- `git push`
+- Try pull the changes `git pull`
+- Only if unsuccessful,
+  - Stash the changes `git stash save 'my changes'`
+  - Pull the changes now `git pull`
+  - Apply the stash now `git stash apply 0`
+- Commit back your changes `git commit -m "<same commit message>"` (commit your changes again)
+- Push the changes `git push`
 
-![Screenshot 2022-07-24 at 12 38 04 PM](https://user-images.githubusercontent.com/12962887/180636539-cad6c7ae-ec56-41e0-9ff0-21dd5e95382f.png)
+![Screenshot 2022-07-24 at 1 22 25 PM](https://user-images.githubusercontent.com/12962887/180637754-4d4daaf9-d1f9-452a-95cb-8af6e0eac52e.png)
+
+Note: This technique can be used for multiple commits as well. But when you commit them back it will become a single commit. If you are doing it, be aware about this note.
+<br>
 <br>
 
-> test...
+---
+
+<br>
+
+### 17. XXX
+
+Yes. 
+
+<br>
+<br>
