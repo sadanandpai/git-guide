@@ -224,9 +224,22 @@ You can undo the commit resetting the HEAD. If you just want to undo the commit 
 
 <br>
 
-### 14. When I am trying to push my changes, getting a rejected message. I am stuck!!!
+### 14. When I am trying to push my changes after commit, getting a rejected message. I am stuck!!!
 
-The rejection could be because the remote branch might be ahead of the local branch. Different techniques can be used here to achieve sync
+The rejection could be because the remote branch might be ahead of the local branch. Different techniques can be used here to achieve sync.
+
+- Pull the changes `git pull`
+- Continue with the merge commit created automatically
+- `git push`
+
+![image](https://user-images.githubusercontent.com/12962887/180632103-bc118a25-eb58-4032-bc12-128b2c506e0c.png)
+
+If there are conflicts, then resolve them manually to proceed ahead as shown below.
+
+
+### 15. I have created single or multiple commits in my local and while pushing getting a rejected message. Is there a way to push the changes without a merge?
+
+Yes. You can either undo the commits and then pull or rebase the changes.
 Undo your commit first. Then pull the remote changes & push your changes
 
 - Undo your commit by running `git reset --soft HEAD~1` (1 represents undoing 1 commit)
