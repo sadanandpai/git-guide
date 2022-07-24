@@ -83,11 +83,12 @@ Similarly, to unstage a file use the command `git reset <file>`
 
 <br>
 
-### I have modified/formatted some code while going through. Now I want the code to be back to the state as it was.
+### 6. I have modified/formatted some code while going through. Now I want the code to be back to the state as it was.
 
-- Enter the command `git reset --hard`
+- To reset all the changes `git reset --hard`
+- To reset a single file `git checkout HEAD -- <file-name>`
 
-To reset a single file, run the command `git checkout HEAD -- <file-name>`
+<img width="719" alt="image" src="https://user-images.githubusercontent.com/12962887/180649258-1dddabf1-bdc2-4706-a537-26eaad4ba99e.png">
 <br>
 <br>
 
@@ -95,20 +96,19 @@ To reset a single file, run the command `git checkout HEAD -- <file-name>`
 
 <br>
 
-### I have made some code changes. Now I want to move to a different branch. What should I do?
+### 7. I have made some code changes. But I want to commit to a new separatte branch.
 
-You can create a separate branch out of the current branch and commit it. In future if you want to view or continue the work you can come back to the branch.
+You can create a separate branch out of the current branch and commit it. This works both if you have already made changes or yet to start making changes.
 
-- Enter the command `git checkout -b <my-personal-branch-name>`
+- Create a new branch `git checkout -b <my-branch-name>`
 - Stage all the changes `git add *`
 - Commit the changes `git commit -m "<some commit message>"`
 
-To go back to the original branch enter the command `git checkout <original-branch-name>`
-To see your changes `git checkout <my-branch-name>`
-
-`my-branch-name` is your local branch and not available for anyone else
+To switch between the branches use the command `git checkout <original-branch-name>`
 
 <img width="555" alt="image" src="https://user-images.githubusercontent.com/12962887/173236172-30ccb855-0b2c-47ae-a711-152f20bc3b67.png">
+
+Note: `my-branch-name` is your local branch and not available for anyone else unless you push it
 <br>
 <br>
 
@@ -116,15 +116,14 @@ To see your changes `git checkout <my-branch-name>`
 
 <br>
 
-### I am asked to raise a PR to a branch (ex develop). What am I supposed to do?
+### 8. I am asked to raise a PR to a branch (ex develop). What am I supposed to do?
 
 You can follow the same steps as given in the previous question. Once done you will push the code and raise a PR. Its that simple.
 
 - Enter the command `git checkout -b <my-branch-name>`
 - Stage all the changes `git add *`
 - Commit the changes `git commit -m "<some commit message>"`
-- Push the chages `git push`
-As the branch is not present on the remote, it will show the command to use
+- Push the chages `git push` (as the branch is not present on the remote, it will show the command to use)
 - Enter `git push --set-upstream origin <my-branch-name>`
 
 <img width="872" alt="Screenshot 2022-07-24 at 4 47 06 PM" src="https://user-images.githubusercontent.com/12962887/180644568-b2fc1d78-399c-443d-b714-3ab1cafb83bd.png">
@@ -142,7 +141,7 @@ Now select the base branch to which you want to raise a PR and click on 'Create 
 
 <br>
 
-### 7. What if I do not want one of my branch anymore?
+### 9. What if I do not want one of my branches anymore?
 
 You can use the below commands to delete any branch in your local. But be sure that you really want to delete a branch
 
@@ -159,7 +158,7 @@ If it is not allowing to delete the branch, then use the command `git branch -D 
 
 <br>
 
-### 8. I have made some changes to the code on the branch on which all of the developers are working. How can my make my changes published?
+### 10. I have made some changes to the code on the branch on which all of the developers are working. How can my make my changes published directly without a PR?
 
 To move the changes from your local machine to online (called origin), follow below steps in your terminal
 
@@ -175,7 +174,7 @@ To move the changes from your local machine to online (called origin), follow be
 
 <br>
 
-### 9. I just committed but forgot to add few files to the commit. Is there a to update the same commit with some modifications?
+### 11. I just committed but forgot to add few files to the commit. Is there a to update the same commit with some modifications?
 
 Yes. You can update the commit by amending your changes.
 
@@ -196,7 +195,7 @@ Note: The `amend` updates the previous commit without creating new one on top of
 
 <br>
 
-### 10. I created a commit and also pushed it. Is it possible to update that commit now?
+### 12. I created a commit and also pushed it. Is it possible to update that commit now?
 
 Yes. You can update the commit even after it is pushed. Everything will follow as mentioned in the previous question, but you will have to force push.
 
@@ -214,7 +213,7 @@ Note: You need to be very careful while pushing forcefully, as it may eliminate 
 
 <br>
 
-### 11. I have made some changes in a branch. But it is partially complete. How can I continue from the same point in future?
+### 13. I have made some changes in a branch. But it is partially complete. How can I continue from the same point in future?
 
 If you are making some changes and need to move on to some other work and then come back, in such case either you can commit or store (stash) the changes.
 
@@ -234,7 +233,7 @@ where n is the stash number. To get the list of stashes `git stash list`
 
 <br>
 
-### 12. After applying the stash, I am getting a lot of conflicts in the code.
+### 14. After applying the stash, I am getting a lot of conflicts in the code.
 
 If there are changes in the code on the region of the stashed code, it is expected to get the conflicts. You will have manually resolve and the conflicts carefully.
 
@@ -249,7 +248,7 @@ Below is the view of the VSCode, which helps in easily resolving the conflicts.
 
 <br>
 
-### 13. I have committed my changes. How can I undo my change?
+### 15. I have committed my changes. How can I undo my change?
 
 You can undo the commit resetting the HEAD. If you just want to undo the commit but let the changes be present then use `soft` attribute else if you do want the commit along with the changes then use `hard` attribute
 
@@ -263,7 +262,7 @@ You can undo the commit resetting the HEAD. If you just want to undo the commit 
 
 <br>
 
-### 14. I have created single or multiple commits. When I am trying to push my changes, getting a rejected message. I am stuck!!!
+### 16. I have created single or multiple commits. When I am trying to push my changes, getting a rejected message. I am stuck!!!
 
 The rejection could be because the remote branch might be ahead of the local branch. Different techniques can be used here to achieve sync.
 
@@ -275,7 +274,7 @@ The rejection could be because the remote branch might be ahead of the local bra
 
 If there are conflicts, then resolve them manually to proceed ahead as shown below.
 
-### 15. I followed the above steps, but getting conflicts after git pull.
+### 17. I followed the above steps, but getting conflicts after git pull.
 
 If there are code changes on the smae region from multiple commits, the conflicts will occur. You need resolve all the conflicts and proceed.
 
@@ -292,7 +291,7 @@ If there are code changes on the smae region from multiple commits, the conflict
 
 <br>
 
-### 16. I have created single commit. When I am trying to push my changes, getting a rejected message. Can I pull the changes without creating a merge commit?
+### 18. I have created single commit. When I am trying to push my changes, getting a rejected message. Can I pull the changes without creating a merge commit?
 
 Yes. You can undo your commit and stash it. Then pull the changes and apply the stash.
 
