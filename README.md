@@ -68,15 +68,41 @@ To reset a single file, run the command `git checkout HEAD -- <file-name>`
 You can create a separate branch out of the current branch and commit it. In future if you want to view or continue the work you can come back to the branch.
 
 - Enter the command `git checkout -b <my-personal-branch-name>`
-- Stage all the changes using the command `git add *`
-- Then save your changes by the command `git commit -m "<some commit message>"`
+- Stage all the changes `git add *`
+- Commit the changes `git commit -m "<some commit message>"`
 
 To go back to the original branch enter the command `git checkout <original-branch-name>`
-To see your changes `git checkout <my-personal-branch-name>`
+To see your changes `git checkout <my-branch-name>`
 
-`my-personal-branch-name` is your local branch and not available for anyone else
+`my-branch-name` is your local branch and not available for anyone else
 
 <img width="555" alt="image" src="https://user-images.githubusercontent.com/12962887/173236172-30ccb855-0b2c-47ae-a711-152f20bc3b67.png">
+<br>
+<br>
+
+---
+
+<br>
+
+### . I am asked to raise a PR to a branch (ex develop). What am I supposed to do?
+
+You can follow the same steps as given in the previous question. Once done you will push the code and raise a PR. Its that simple.
+
+- Enter the command `git checkout -b <my-branch-name>`
+- Stage all the changes `git add *`
+- Commit the changes `git commit -m "<some commit message>"`
+- Push the chages `git push`
+As the branch is not present on the remote, it will show the command to use
+- Enter `git push --set-upstream origin <my-branch-name>`
+
+<img width="872" alt="Screenshot 2022-07-24 at 4 47 06 PM" src="https://user-images.githubusercontent.com/12962887/180644568-b2fc1d78-399c-443d-b714-3ab1cafb83bd.png">
+
+The URL to raise the PR will be automatically available as shown above. Use the link and open in the browser.
+
+![image](https://user-images.githubusercontent.com/12962887/180644608-ad9175df-64cd-4f8e-930c-64333ea2222a.png)
+
+Now select the base branch to which you want to raise a PR and click on 'Create a PR'
+
 <br>
 <br>
 
@@ -173,7 +199,7 @@ Note: You need to be very careful while pushing forcefully, as it may eliminate 
 
 <br>
 
-### 11. I have made some changes in a branch. But it is partially completely. How can I continue from the same point in future?
+### 11. I have made some changes in a branch. But it is partially complete. How can I continue from the same point in future?
 
 If you are making some changes and need to move on to some other work and then come back, in such case either you can commit or store (stash) the changes.
 
