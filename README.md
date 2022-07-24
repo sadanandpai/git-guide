@@ -86,7 +86,24 @@ To see your changes `git checkout <my-personal-branch-name>`
 
 <br>
 
-### 6. What if I do not want one of my branch anymore?
+### 6. What if I want only some of files added and pushed instead of all the changes?
+
+You can add files by mentioning the file/files with relative or fulll path. You can add file one by one or multiple files at a time using the commands
+
+- Add single file `git add <file-name>`
+- Add multiple files `git add <file1-name> <file2-name>`
+
+<img width="589" alt="image" src="https://user-images.githubusercontent.com/12962887/170866895-9d9c2f38-dea2-4709-b5ad-dc7764dfa6f5.png">
+
+Similarly, to unstage a file use the command `git reset <file>`
+<br>
+<br>
+
+---
+
+<br>
+
+### 7. What if I do not want one of my branch anymore?
 
 You can use the below commands to delete any branch in your local. But be sure that you really want to delete a branch
 
@@ -103,7 +120,7 @@ If it is not allowing to delete the branch, then use the command `git branch -D 
 
 <br>
 
-### 7. I have made some changes to the code on the branch on which all of the developers are working. How can my make my changes published?
+### 8. I have made some changes to the code on the branch on which all of the developers are working. How can my make my changes published?
 
 To move the changes from your local machine to online (called origin), follow below steps in your terminal
 
@@ -112,23 +129,6 @@ To move the changes from your local machine to online (called origin), follow be
 - Push the changes `git push`
 
 <img width="828" alt="image" src="https://user-images.githubusercontent.com/12962887/170865776-dea5f82e-6ae6-4f60-b70a-0fc8d37fd741.png">
-<br>
-<br>
-
----
-
-<br>
-
-### 8. What if I want only some of files added and pushed instead of all the changes?
-
-You can add files by mentioning the file/files with relative or fulll path. You can add file one by one or multiple files at a time using the commands
-
-- Add single file `git add <file-name>`
-- Add multiple files `git add <file1-name> <file2-name>`
-
-<img width="589" alt="image" src="https://user-images.githubusercontent.com/12962887/170866895-9d9c2f38-dea2-4709-b5ad-dc7764dfa6f5.png">
-
-Similarly, to unstage a file use the command `git reset <file>`
 <br>
 <br>
 
@@ -267,9 +267,11 @@ Yes. You can undo your commit and stash it. Then pull the changes and apply the 
 - Push the changes `git push`
 
 #### If pull is successful,
+
 <img width="982" alt="image" src="https://user-images.githubusercontent.com/12962887/180638669-24fcfc24-babf-4200-94c6-2cddcd4242c2.png">
 
 #### If pull is unsuccessful,
+
 ![Screenshot 2022-07-24 at 1 22 25 PM](https://user-images.githubusercontent.com/12962887/180637754-4d4daaf9-d1f9-452a-95cb-8af6e0eac52e.png)
 
 Note: This technique can be used for multiple commits as well. But when you commit them back it will become a single commit. If you are doing it, be aware about this note.
@@ -282,7 +284,7 @@ Note: This technique can be used for multiple commits as well. But when you comm
 
 ### 17. XXX
 
-Yes. 
+Yes.
 
 <br>
 <br>
