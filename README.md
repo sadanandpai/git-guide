@@ -1,4 +1,3 @@
-xxx
 <div align="center">
   <h1>Git Lean Guide</h1>
   Lean but practical guide to every day Git commands
@@ -111,19 +110,19 @@ You can undo the commit resetting the HEAD. If you just want to undo the commit 
 
 <br>
 
-### 13. I have made some changes in the branch. Also I wanted to pull the new changes. But it is not working.
+### 8. I have made some changes in the branch. Also I wanted to pull the new changes. But it is not working.
 
 The command `git pull` may not work if the changes are done by someone else to the same files by to which you have also modified.
 
 - `git stash save '<name of the change>` -u
-
-To retrieve the changes once you are back,
-
-- `git stash apply <n>`
+- Pull the changes now `git pull`
+- Retrieve the changes `git stash apply <n>`
 
 where n is the stash number. To get the list of stashes `git stash list`
 
-<img width="819" alt="image" src="https://user-images.githubusercontent.com/12962887/180613172-aa7aca8e-a269-4af4-94dc-9a8055962b91.png">
+<img width="905" alt="image" src="https://user-images.githubusercontent.com/12962887/180650511-dfd11277-fbf4-4f4b-a8c5-e6c86aab5f9b.png">
+
+Note: You can stash multiple changes and bring them back as and when you like to
 <br>
 <br>
 
@@ -131,7 +130,7 @@ where n is the stash number. To get the list of stashes `git stash list`
 
 <br>
 
-### 14. After applying the stash, I am getting a lot of conflicts in the code.
+### 9. After applying the stash, I am getting a lot of conflicts in the code.
 
 If there are changes in the code on the region of the stashed code, it is expected to get the conflicts. You will have manually resolve and the conflicts carefully.
 
@@ -146,7 +145,7 @@ Below is the view of the VSCode, which helps in easily resolving the conflicts.
 
 <br>
 
-### 7. I have made some code changes. But I want to commit to a new separatte branch.
+### 10. I have made some code changes. But I want to commit to a new separatte branch.
 
 You can create a separate branch out of the current branch and commit it. This works both if you have already made changes or yet to start making changes.
 
@@ -166,7 +165,7 @@ Note: `my-branch-name` is your local branch and not available for anyone else un
 
 <br>
 
-### 8. I am asked to raise a PR to a branch (ex develop). What am I supposed to do?
+### 11. I am asked to raise a PR to a branch (ex develop). What am I supposed to do?
 
 You can follow the same steps as given in the previous question. Once done you will push the code and raise a PR. Its that simple.
 
@@ -191,7 +190,7 @@ Now select the base branch to which you want to raise a PR and click on 'Create 
 
 <br>
 
-### 9. What if I do not want one of my branches anymore?
+### 12. What if I do not want one of my branches anymore?
 
 You can use the below commands to delete any branch in your local. But be sure that you really want to delete a branch
 
@@ -208,7 +207,7 @@ If it is not allowing to delete the branch, then use the command `git branch -D 
 
 <br>
 
-### 10. I have made some changes to the code on the branch on which all of the developers are working. How can my make my changes published directly without a PR?
+### 13. I have made some changes to the code on the branch on which all of the developers are working. How can my make my changes published directly without a PR?
 
 To move the changes from your local machine to online (called origin), follow below steps in your terminal
 
@@ -224,7 +223,7 @@ To move the changes from your local machine to online (called origin), follow be
 
 <br>
 
-### 11. I just committed but forgot to add few files to the commit. Is there a to update the same commit with some modifications?
+### 14. I just committed but forgot to add few files to the commit. Is there a to update the same commit with some modifications?
 
 Yes. You can update the commit by amending your changes.
 
@@ -245,7 +244,7 @@ Note: The `amend` updates the previous commit without creating new one on top of
 
 <br>
 
-### 12. I created a commit and also pushed it. Is it possible to update that commit now?
+### 15. I created a commit and also pushed it. Is it possible to update that commit now?
 
 Yes. You can update the commit even after it is pushed. Everything will follow as mentioned in the previous question, but you will have to force push.
 
