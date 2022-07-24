@@ -258,3 +258,4 @@ Undo your commit first. Then pull the remote changes & push your changes
 ### 15. I have followed the above procedure. But when I pulled the changes, it is showing the conflicts. How can I proceed?
 
 -> Test
+>>>
