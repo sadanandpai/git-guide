@@ -224,7 +224,7 @@ You can undo the commit resetting the HEAD. If you just want to undo the commit 
 
 <br>
 
-### 14. When I am trying to push my changes after commit, getting a rejected message. I am stuck!!!
+### 14. I have created single or multiple commits. When I am trying to push my changes, getting a rejected message. I am stuck!!!
 
 The rejection could be because the remote branch might be ahead of the local branch. Different techniques can be used here to achieve sync.
 
@@ -236,17 +236,16 @@ The rejection could be because the remote branch might be ahead of the local bra
 
 If there are conflicts, then resolve them manually to proceed ahead as shown below.
 
-### 15. I have created single or multiple commits in my local and while pushing getting a rejected message. Is there a way to push the changes without a merge?
+### 15. I followed the above steps, but getting conflicts after git pull.
 
-Yes. You can either undo the commits and then pull or rebase the changes.
-Undo your commit first. Then pull the remote changes & push your changes
+If there are code changes on the smae region from multiple commits, the conflicts will occur. You need resolve all the conflicts and proceed.
 
-- Undo your commit by running `git reset --soft HEAD~1` (1 represents undoing 1 commit)
-- `git pull`
-- `git commit -m "<some commit message>"` (commit your changes again)
+- Resolve all the conflicts
+- `git add <file-path>`
+- `git merge --continue`
 - `git push`
 
-![image](https://user-images.githubusercontent.com/12962887/173234060-43c76e48-14cb-4680-bdcd-aaa9cd0e64d4.png)
+![Screenshot 2022-07-24 at 12 38 04 PM](https://user-images.githubusercontent.com/12962887/180636539-cad6c7ae-ec56-41e0-9ff0-21dd5e95382f.png)
 <br>
 <br>
 
@@ -254,9 +253,15 @@ Undo your commit first. Then pull the remote changes & push your changes
 
 <br>
 
-### 15. I have followed the above procedure. But when I pulled the changes, it is showing the conflicts. How can I proceed?
+### 16. I followed the above steps, but getting conflicts after git pull.
 
--> Test
-<<<<>>>>
+If there are code changes on the smae region from multiple commits, the conflicts will occur. You need resolve all the conflicts and proceed.
 
-> > >
+- Undo your commit by running `git reset --soft HEAD~1` (1 represents undoing 1 commit)
+- `git pull`
+- `git commit -m "<some commit message>"` (commit your changes again)
+- `git push`
+
+![Screenshot 2022-07-24 at 12 38 04 PM](https://user-images.githubusercontent.com/12962887/180636539-cad6c7ae-ec56-41e0-9ff0-21dd5e95382f.png)
+<br>
+<br>
