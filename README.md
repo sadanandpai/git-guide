@@ -93,7 +93,7 @@ You can use the below commands to delete any branch in your local. But be sure t
 - Switch to any branch other than your personal branch by entering the command `git checkout main`
 - Enter the command `git branch -d <branch-name>`
 
-If it is not allowing to delete the branch, then use the command`git branch -D <branch-name>`
+If it is not allowing to delete the branch, then use the command `git branch -D <branch-name>`
 
 <img width="797" alt="image" src="https://user-images.githubusercontent.com/12962887/173236283-58ff17a0-6d01-424a-9117-0e4d0e13e6fa.png">
 <br>
