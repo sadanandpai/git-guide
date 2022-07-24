@@ -51,7 +51,39 @@ By default the main/master branch is active. Ask which branch has the relevant c
 
 <br>
 
-### 4. I have modified/formatted some code while going through. Now I want the code to be back to the state as it was.
+### 4. I have modified the code and added changes. How to commit my changes
+
+First stage all the files and then commit your changes. You can create multiple commits.
+
+- Enter the command `git add *`
+- Commit the changes `git commit -m 'You commit message'`
+
+<img width="608" alt="image" src="https://user-images.githubusercontent.com/12962887/180645381-c77af0e5-6d4c-4991-84d7-1572636e34a3.png">
+<br>
+<br>
+
+---
+
+<br>
+
+### 5. What if I want only some of files added and pushed instead of all the changes?
+
+You can add files by mentioning the file/files with relative or fulll path. You can add file one by one or multiple files at a time using the commands
+
+- Add single file `git add <file-name>`
+- Add multiple files `git add <file1-name> <file2-name>`
+
+<img width="619" alt="image" src="https://user-images.githubusercontent.com/12962887/180643543-7ca529df-5126-4a73-9dd1-703af2f03fba.png">
+
+Similarly, to unstage a file use the command `git reset <file>`
+<br>
+<br>
+
+---
+
+<br>
+
+### I have modified/formatted some code while going through. Now I want the code to be back to the state as it was.
 
 - Enter the command `git reset --hard`
 
@@ -63,7 +95,7 @@ To reset a single file, run the command `git checkout HEAD -- <file-name>`
 
 <br>
 
-### 5. I have made some code changes. Now I want to move to a different branch. What should I do?
+### I have made some code changes. Now I want to move to a different branch. What should I do?
 
 You can create a separate branch out of the current branch and commit it. In future if you want to view or continue the work you can come back to the branch.
 
@@ -84,7 +116,7 @@ To see your changes `git checkout <my-branch-name>`
 
 <br>
 
-### . I am asked to raise a PR to a branch (ex develop). What am I supposed to do?
+### I am asked to raise a PR to a branch (ex develop). What am I supposed to do?
 
 You can follow the same steps as given in the previous question. Once done you will push the code and raise a PR. Its that simple.
 
@@ -103,23 +135,6 @@ The URL to raise the PR will be automatically available as shown above. Use the 
 
 Now select the base branch to which you want to raise a PR and click on 'Create a PR'
 
-<br>
-<br>
-
----
-
-<br>
-
-### 6. What if I want only some of files added and pushed instead of all the changes?
-
-You can add files by mentioning the file/files with relative or fulll path. You can add file one by one or multiple files at a time using the commands
-
-- Add single file `git add <file-name>`
-- Add multiple files `git add <file1-name> <file2-name>`
-
-<img width="619" alt="image" src="https://user-images.githubusercontent.com/12962887/180643543-7ca529df-5126-4a73-9dd1-703af2f03fba.png">
-
-Similarly, to unstage a file use the command `git reset <file>`
 <br>
 <br>
 
