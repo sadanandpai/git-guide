@@ -165,7 +165,28 @@ Note: `my-branch-name` is your local branch and not available for anyone else un
 
 <br>
 
-### 11. I am asked to raise a PR to a branch (ex develop). What am I supposed to do?
+### 11. I just committed but forgot to add few files to the commit. Is there a to update the same commit with some modifications?
+
+Yes. You can update the commit by amending your changes.
+
+- To add files `git add <file-name> <file-name> ...`
+- To update the commit `git commit --amend --no-edit`
+
+To update with new commit message `git commit --amend -m 'My new commit message'` (This command can also be used to simply update the previous commit message without any code modifications)
+
+`--no-edit` is used to avoid the prompt to edit the commit message. If you want to modify the commit message as well during the update of the commit, then do not include `-m` along with your commit message
+
+<img width="587" alt="image" src="https://user-images.githubusercontent.com/12962887/180615625-baa2b6f5-2ca5-454a-bfbf-d7115537cdbf.png">
+
+Note: The `amend` updates the previous commit without creating new one on top of previous. (in reality, Git discards the previous commit and replaces it with new commit)
+<br>
+<br>
+
+---
+
+<br>
+
+### 12. I am asked to raise a PR to a branch (ex develop). What am I supposed to do?
 
 You can follow the same steps as given in the previous question. Once done you will push the code and raise a PR. Its that simple.
 
@@ -190,7 +211,7 @@ Now select the base branch to which you want to raise a PR and click on 'Create 
 
 <br>
 
-### 12. What if I do not want one of my branches anymore?
+### 13. What if I do not want one of my branches anymore?
 
 You can use the below commands to delete any branch in your local. But be sure that you really want to delete a branch
 
@@ -207,7 +228,7 @@ If it is not allowing to delete the branch, then use the command `git branch -D 
 
 <br>
 
-### 13. I have made some changes to the code on the branch on which all of the developers are working. How can my make my changes published directly without a PR?
+### 14. I have made some changes to the code on the branch on which all of the developers are working. How can my make my changes published directly without a PR?
 
 To move the changes from your local machine to online (called origin), follow below steps in your terminal
 
@@ -216,27 +237,6 @@ To move the changes from your local machine to online (called origin), follow be
 - Push the changes `git push`
 
 <img width="828" alt="image" src="https://user-images.githubusercontent.com/12962887/170865776-dea5f82e-6ae6-4f60-b70a-0fc8d37fd741.png">
-<br>
-<br>
-
----
-
-<br>
-
-### 14. I just committed but forgot to add few files to the commit. Is there a to update the same commit with some modifications?
-
-Yes. You can update the commit by amending your changes.
-
-- To add files `git add <file-name> <file-name> ...`
-- To update the commit `git commit --amend --no-edit`
-
-To update with new commit message `git commit --amend -m 'My new commit message'` (This command can also be used to simply update the previous commit message without any code modifications)
-
-`--no-edit` is used to avoid the prompt to edit the commit message. If you want to modify the commit message as well during the update of the commit, then do not include `-m` along with your commit message
-
-<img width="587" alt="image" src="https://user-images.githubusercontent.com/12962887/180615625-baa2b6f5-2ca5-454a-bfbf-d7115537cdbf.png">
-
-Note: The `amend` updates the previous commit without creating new one on top of previous. (in reality, Git discards the previous commit and replaces it with new commit)
 <br>
 <br>
 
@@ -320,7 +320,7 @@ Note: This technique can be used for multiple commits as well. But when you comm
 
 <br>
 
-### 17. XXX
+### 19. XXX
 
 Yes.
 
