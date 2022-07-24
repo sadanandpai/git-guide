@@ -33,7 +33,8 @@ By default the main/master branch is active. Ask which branch has the relevant c
 - Navigate inside the cloned folder `cd repo<-name>`
 - Enter the command `git checkout <branch-name>`
 
-<img width="654" alt="image" src="https://user-images.githubusercontent.com/12962887/173235836-dfc2039c-d412-4ca6-b4d4-580ef557c8c6.png" />
+<img width="619" alt="Screenshot 2022-07-24 at 4 17 20 PM" src="https://user-images.githubusercontent.com/12962887/180643741-f3f3fd37-a8d0-459e-b261-4fb4303f80d0.png">
+
 <br>
 <br>
 
@@ -93,7 +94,7 @@ You can add files by mentioning the file/files with relative or fulll path. You 
 - Add single file `git add <file-name>`
 - Add multiple files `git add <file1-name> <file2-name>`
 
-<img width="589" alt="image" src="https://user-images.githubusercontent.com/12962887/170866895-9d9c2f38-dea2-4709-b5ad-dc7764dfa6f5.png">
+<img width="619" alt="image" src="https://user-images.githubusercontent.com/12962887/180643543-7ca529df-5126-4a73-9dd1-703af2f03fba.png">
 
 Similarly, to unstage a file use the command `git reset <file>`
 <br>
