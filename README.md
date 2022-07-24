@@ -35,9 +35,6 @@ By default the main/master branch is active. Ask which branch has the relevant c
 
 <img width="619" alt="Screenshot 2022-07-24 at 4 17 20 PM" src="https://user-images.githubusercontent.com/12962887/180643741-f3f3fd37-a8d0-459e-b261-4fb4303f80d0.png">
 
-<br>
-<br>
-
 ---
 
 <br>
@@ -66,9 +63,9 @@ To reset a single file, run the command `git checkout HEAD -- <file-name>`
 
 <br>
 
-### 5. I have commented and formatted some code for my reference and I want to keep a copy of this with me for personal use.
+### 5. I have made some code changes. Now I want to move to a different branch. What should I do?
 
-The changes you have done which you want keep with you only can be created as a separate branch
+You can create a separate branch out of the current branch and commit it. In future if you want to view or continue the work you can come back to the branch.
 
 - Enter the command `git checkout -b <my-personal-branch-name>`
 - Stage all the changes using the command `git add *`
