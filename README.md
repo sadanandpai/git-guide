@@ -291,7 +291,24 @@ If there are code changes on the smae region from multiple commits, the conflict
 
 <br>
 
-### 18. I have created single commit. When I am trying to push my changes, getting a rejected message. Can I pull the changes without creating a merge commit?
+### 18. I have created single/multiple commits. When I am trying to push my changes, getting a rejected message. Can I pull the new changes without merge commit?
+
+Yes. You can pull the changes without a merge. This is called as **Rebase**. I know you have heard it a lot. It is very simple though.
+
+- `git pull --rebase`
+
+If you dont get conflicts, you are good. Else
+
+- `git rebase --continue`
+
+<br>
+<br>
+
+---
+
+<br>
+
+### 19. I have created single commit. When I am trying to push my changes, getting a rejected message. Can I pull the changes without creating a merge commit?
 
 Yes. You can undo your commit and stash it. Then pull the changes and apply the stash.
 
@@ -320,11 +337,7 @@ Note: This technique can be used for multiple commits as well. But when you comm
 
 <br>
 
-### 19. I have created multiple commits. I want to pull without merge commit. How can I do it without undo commit?
-
-Your commits can be placed on top of the latest commits after pulling from remote. This is called as **Rebase**. Rebase changes the history of the commits in order to achieve this.
-
-- Rebase 
+### 20. xxx
 
 <br>
 <br>
