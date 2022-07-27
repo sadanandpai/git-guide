@@ -320,9 +320,11 @@ Note: This technique can be used for multiple commits as well. But when you comm
 
 <br>
 
-### 19. XXX
+### 19. I have created multiple commits. I want to pull without merge commit. How can I do it without undo commit?
 
-Yes.
+Your commits can be placed on top of the latest commits after pulling from remote. This is called as **Rebase**. Rebase changes the history of the commits in order to achieve this.
+
+- Rebase 
 
 <br>
 <br>
