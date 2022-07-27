@@ -262,7 +262,7 @@ Note: You need to be very careful while pushing forcefully, as it may eliminate 
 
 <br>
 
-### 16. I have created single or multiple commits. When I am trying to push my changes, getting a rejected message. I am stuck!!!
+### 16. I have created single/multiple commits. When I am trying to push my changes, getting a rejected message. I am stuck!!!
 
 The rejection could be because the remote branch might be ahead of the local branch. Different techniques can be used here to achieve sync.
 
@@ -284,6 +284,9 @@ If there are code changes on the smae region from multiple commits, the conflict
 - `git push`
 
 ![Screenshot 2022-07-24 at 12 38 04 PM](https://user-images.githubusercontent.com/12962887/180636539-cad6c7ae-ec56-41e0-9ff0-21dd5e95382f.png)
+
+Note: If something goes wrong, in any of the above steps, then there is nothing to panic. Just run `git merge --abort` and redo the steps.
+
 <br>
 <br>
 
@@ -291,17 +294,23 @@ If there are code changes on the smae region from multiple commits, the conflict
 
 <br>
 
-### 18. I have created single/multiple commits. When I am trying to push my changes, getting a rejected message. Can I pull the new changes without merge commit?
+### 18. I have created single/multiple commits. When I am trying to push my changes, getting a rejected message. Can I pull the new changes without merge commit (Rebase)?
 
 Yes. You can pull the changes without a merge. This is called as **Rebase**. I know you have heard it a lot. It is very simple though.
 
 - `git pull --rebase`
+- After success, `git push`
 
-If you dont get conflicts, you are good. Else
+<img width="982" alt="image" src="https://user-images.githubusercontent.com/12962887/181307242-3b2ff96a-1896-43b2-814c-e22cfbc50320.png">
+
+If you get conflicts, then solve all the conflicts. Then
 
 - `git rebase --continue`
+- After success, `git push`
 
 ![image](https://user-images.githubusercontent.com/12962887/181306723-5d1929bf-2d7f-4648-bb2e-534f26ae4a34.png)
+
+Note: If something goes wrong, in any of the above steps, then there is nothing to panic. Just run `git rebase --abort` and redo the steps.
 
 <br>
 <br>
@@ -310,7 +319,7 @@ If you dont get conflicts, you are good. Else
 
 <br>
 
-### 19. I have created single commit. When I am trying to push my changes, getting a rejected message. Can I pull the changes without creating a merge commit?
+### 19. I have created single commit. When I am trying to push my changes, getting a rejected message. Can I undo the commit and pull?
 
 Yes. You can undo your commit and stash it. Then pull the changes and apply the stash.
 
@@ -339,9 +348,55 @@ Note: This technique can be used for multiple commits as well. But when you comm
 
 <br>
 
-### 20. xxx
+### 20. I have raised a PR. But it is showing conflicts.
+
+PR will show conflicts if the new changes added to the source branch is conflicting with your changes. You can either merge the changes to your branch or rebase your branch. Follow any of them.
+
+Assuming that your branch is `develop` and source branch is `main`
+
+Merge process
+
+- Checkout to main branch `git checkout main`
+- Pull changes `git pull`
+- Checkout to your branch `git checkout develop`
+- Merge the changes `git merge main`
+- If conflicts are present `git merge --continue`
+- Push the changes `git push`
+
+
+
+Rebase process
+
+- Checkout to main branch `git checkout main`
+- Pull changes `git pull`
+- Checkout to your branch `git checkout develop`
+- Rebase the branch `git rebase main`
+- If conflicts are present, run `git rebase --continue` after resolving the conflicts
+- Push the changes `git push`
+
+Note: You may have to run `git rebase --continue` multiple times if there are multiple conflicts on your multiple commits.
 
 <br>
 <br>
 
-.
+---
+
+<br>
+
+### 21. I have many commits. How can I make them into a single commit?
+
+Squash.
+
+<br>
+<br>
+
+---
+
+<br>
+
+### 21. I am trying to rebase my branch to get new changes or I am trying rebase my branch with source branch to get new changes. I have many commits.
+
+Refer to 21
+
+<br>
+<br>
