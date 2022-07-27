@@ -301,6 +301,8 @@ If you dont get conflicts, you are good. Else
 
 - `git rebase --continue`
 
+![image](https://user-images.githubusercontent.com/12962887/181306723-5d1929bf-2d7f-4648-bb2e-534f26ae4a34.png)
+
 <br>
 <br>
 
