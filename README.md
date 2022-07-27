@@ -120,7 +120,7 @@ The command `git pull` may not work if the changes are done by someone else to t
 
 where n is the stash number. To get the list of stashes `git stash list`
 
-<img width="905" alt="image" src="https://user-images.githubusercontent.com/12962887/180650511-dfd11277-fbf4-4f4b-a8c5-e6c86aab5f9b.png">
+<img width="918" alt="image" src="https://user-images.githubusercontent.com/12962887/181293105-77ec0867-0d95-4f44-99e4-0b1003a6310b.png">
 
 Note: You can stash multiple changes and bring them back as and when you like to
 <br>
