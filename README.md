@@ -474,7 +474,9 @@ Reset
 
 ### 27. I want to delete/undo previous commit from my branch which I have already pushed. I am not looking for revert. I just want to delete it really.
 
-Undo. TODO
+Undo
+
+<img width="707" alt="image" src="https://user-images.githubusercontent.com/12962887/181600183-a5fb2095-d0cc-4c4e-ae68-3f4eea209979.png">
 
 <br>
 <br>
@@ -485,7 +487,7 @@ Undo. TODO
 
 ### 28. I want delete my branch in remote as well
 
-Undo. TODO
+
 
 <br>
 <br>
