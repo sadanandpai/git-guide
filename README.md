@@ -371,6 +371,13 @@ Note: You may have to run `git rebase --continue` multiple times if there are mu
 
 Squash. TODO
 
+<img width="654" alt="Screenshot 2022-07-28 at 6 55 42 PM" src="https://user-images.githubusercontent.com/12962887/181516582-3493d359-0e04-4679-9b9b-2c120aa1adf9.png">
+
+![image](https://user-images.githubusercontent.com/12962887/181514663-9e04cc4a-45f3-41b5-9a4b-bde2f6fda1d5.png)
+
+![image](https://user-images.githubusercontent.com/12962887/181516003-21e0a84f-30c5-47ce-9466-f1a68b7dc697.png)
+
+
 <br>
 <br>
 
