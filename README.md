@@ -328,29 +328,35 @@ Note: If something goes wrong, in any of the above steps, then there is nothing 
 
 ### 19. I have raised a PR. But it is showing conflicts.
 
-PR will show conflicts if the new changes added to the source branch is conflicting with your changes. You can either merge the changes to your branch or rebase your branch. Follow any of them.
+![Screenshot 2022-07-28 at 6 09 20 PM](https://user-images.githubusercontent.com/12962887/181507186-92a6c427-553c-4c1e-b87a-0394d23a1bad.png)
+
+PR will show conflicts if the new changes added to the source branch is conflicting with your changes or your branch is lagging. You can either **merge** the changes to your branch or **rebase** your branch. **Follow any of them.**
 
 Assuming that your branch is `develop` and source branch is `main`
 
-Merge process
+#### Merge approach
 
 - Checkout to main branch `git checkout main`
 - Pull changes `git pull`
 - Checkout to your branch `git checkout develop`
 - Merge the changes `git merge main`
+- Resolve all the conflicts and add to staging `git add <files>`
 - If conflicts are present `git merge --continue`
 - Push the changes `git push`
 
+![image](https://user-images.githubusercontent.com/12962887/181508483-a0b79ea8-431f-499f-b802-522b2e9fd02f.png)
 
-
-Rebase process
+#### Rebase approach
 
 - Checkout to main branch `git checkout main`
 - Pull changes `git pull`
 - Checkout to your branch `git checkout develop`
 - Rebase the branch `git rebase main`
-- If conflicts are present, run `git rebase --continue` after resolving the conflicts
-- Push the changes `git push`
+- Resolve all the conflicts and add to staging `git add <files>`
+- Run `git rebase --continue` after resolving the conflicts
+- Push the changes `git push -f`
+
+![image](https://user-images.githubusercontent.com/12962887/181511250-658f490b-0bfe-4d17-bae6-485a1c1d1692.png)
 
 Note: You may have to run `git rebase --continue` multiple times if there are multiple conflicts on your multiple commits.
 
