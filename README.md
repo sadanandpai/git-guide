@@ -377,7 +377,6 @@ Squash. TODO
 
 ![image](https://user-images.githubusercontent.com/12962887/181516003-21e0a84f-30c5-47ce-9466-f1a68b7dc697.png)
 
-
 <br>
 <br>
 
@@ -385,20 +384,86 @@ Squash. TODO
 
 <br>
 
-### 21. I am trying to rebase my branch to get new changes or I am trying rebase my branch with source branch to get new changes. I have many commits.
-
-Refer to 21. TODO
-
-<br>
-<br>
-
----
-
-<br>
-
-### 22. I have made changes and committed to a branch.
+### 21. Rebase with undo
 
 Cherry pick. TODO
+
+<br>
+<br>
+
+---
+
+<br>
+
+### 22. I am trying to rebase my branch with same or other branch. As I have many commits, I am getting lot of conflicts on every commit rebase.
+
+In such cases, you can first squash all commits to one commit (Refer 20). Once ready rebase the branch and resolve all conflicts in a single go.
+
+<br>
+<br>
+
+---
+
+<br>
+
+### 23. I have made changes and committed to a branch. I want to move the same changes to another branch. 
+
+Cherry pick. TODO
+
+<br>
+<br>
+
+---
+
+<br>
+
+### 24. I have pushed pushed my changes and got it merged. I want to revert it immediately. How can I do that?
+
+Revert. TODO
+
+<br>
+<br>
+
+---
+
+<br>
+
+### 25. How do I reset a branch to some other branch?
+
+Reset. TODO
+
+<br>
+<br>
+
+---
+
+<br>
+
+### 26. I want to rename remote branch.
+
+Reset. TODO
+
+<br>
+<br>
+
+---
+
+<br>
+
+### 27. I want delete previous commit of my brnach which I have already pushed. I am not looking for revert. I just want to delete it really.
+
+Undo. TODO
+
+<br>
+<br>
+
+---
+
+<br>
+
+### 28. I want delete my branch in remote as well
+
+Undo. TODO
 
 <br>
 <br>
