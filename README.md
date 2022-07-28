@@ -248,8 +248,6 @@ To move the changes from your local machine to online (called origin), follow be
 
 Yes. You can update the commit even after it is pushed. Everything will follow as mentioned in the previous question, but you will have to force push.
 
-- `git add <file-name> <file-name> ...`
-- `git commit --amend --no-edit` or `git commit --amend`
 - `git push -f` or `git push --force`
 
 <img width="783" alt="image" src="https://user-images.githubusercontent.com/12962887/180615816-743abb81-765c-4723-b44f-faf00da3a820.png">
@@ -340,8 +338,6 @@ Merge process
 - Merge the changes `git merge main`
 - If conflicts are present `git merge --continue`
 - Push the changes `git push`
-
-
 
 Rebase process
 
