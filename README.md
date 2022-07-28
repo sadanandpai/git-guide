@@ -437,7 +437,9 @@ I copy the changes of a commit from one branch to another, you can use **cherry 
 
 ### 24. I have pushed pushed my changes and got it merged. I want to revert it immediately. How can I do that?
 
-Revert. TODO
+Revert
+
+<img width="808" alt="image" src="https://user-images.githubusercontent.com/12962887/181597059-5d121194-9f29-425a-bcc1-7cb466856187.png">
 
 <br>
 <br>
@@ -448,7 +450,9 @@ Revert. TODO
 
 ### 25. How do I reset a branch to some other branch?
 
-Reset. TODO
+Reset
+
+<img width="588" alt="image" src="https://user-images.githubusercontent.com/12962887/181597315-05e8bd39-f9af-40f3-a104-8a11b8ffb52b.png">
 
 <br>
 <br>
