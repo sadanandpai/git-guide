@@ -463,7 +463,7 @@ Reset
 
 ### 26. I want to rename my local and remote branch.
 
-Reset. TODO
+<img width="752" alt="image" src="https://user-images.githubusercontent.com/12962887/181599454-22970ea6-8ee4-424c-acfb-5c0c17179c4a.png">
 
 <br>
 <br>
