@@ -274,6 +274,13 @@ The rejection could be because the remote branch might be ahead of the local bra
 
 If there are conflicts, then resolve them manually to proceed ahead as shown below.
 
+<br>
+<br>
+
+---
+
+<br>
+
 ### 17. I followed the above steps, but getting conflicts after git pull.
 
 If there are code changes on the smae region from multiple commits, the conflicts will occur. You need resolve all the conflicts and proceed.
@@ -319,36 +326,7 @@ Note: If something goes wrong, in any of the above steps, then there is nothing 
 
 <br>
 
-### 19. I have created single commit. When I am trying to push my changes, getting a rejected message. Can I undo the commit and pull?
-
-Yes. You can undo your commit and stash it. Then pull the changes and apply the stash.
-
-- Undo your commit by running `git reset --soft HEAD~1` (1 represents undoing 1 commit)
-- Try pull the changes `git pull`
-- Only if unsuccessful,
-  - Stash the changes `git stash save 'my changes'`
-  - Pull the changes now `git pull`
-  - Apply the stash now `git stash apply 0`
-- Commit back your changes `git commit -m "<same commit message>"` (commit your changes again)
-- Push the changes `git push`
-
-#### If pull is successful,
-
-<img width="982" alt="image" src="https://user-images.githubusercontent.com/12962887/180638669-24fcfc24-babf-4200-94c6-2cddcd4242c2.png">
-
-#### If pull is unsuccessful,
-
-![Screenshot 2022-07-24 at 1 22 25 PM](https://user-images.githubusercontent.com/12962887/180637754-4d4daaf9-d1f9-452a-95cb-8af6e0eac52e.png)
-
-Note: This technique can be used for multiple commits as well. But when you commit them back it will become a single commit. If you are doing it, be aware about this note.
-<br>
-<br>
-
----
-
-<br>
-
-### 20. I have raised a PR. But it is showing conflicts.
+### 19. I have raised a PR. But it is showing conflicts.
 
 PR will show conflicts if the new changes added to the source branch is conflicting with your changes. You can either merge the changes to your branch or rebase your branch. Follow any of them.
 
@@ -383,9 +361,9 @@ Note: You may have to run `git rebase --continue` multiple times if there are mu
 
 <br>
 
-### 21. I have many commits. How can I make them into a single commit?
+### 20. I have many commits. How can I make them into a single commit?
 
-Squash.
+Squash. TODO
 
 <br>
 <br>
@@ -396,7 +374,18 @@ Squash.
 
 ### 21. I am trying to rebase my branch to get new changes or I am trying rebase my branch with source branch to get new changes. I have many commits.
 
-Refer to 21
+Refer to 21. TODO
+
+<br>
+<br>
+
+---
+
+<br>
+
+### 22. I have made changes and committed to a branch.
+
+Cherry pick. TODO
 
 <br>
 <br>
