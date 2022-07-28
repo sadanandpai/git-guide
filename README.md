@@ -418,7 +418,7 @@ You can first squash all commits to one commit (Refer 20). Once ready rebase the
 
 <br>
 
-### 23. I have made changes and committed to a branch. I want to move the same changes to another branch. 
+### 23. I have made changes and committed to a branch. I want to move the same changes to another branch.
 
 I copy the changes of a commit from one branch to another, you can use **cherry pick**.
 
@@ -485,3 +485,5 @@ Undo. TODO
 
 <br>
 <br>
+
+.
