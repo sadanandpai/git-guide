@@ -433,11 +433,11 @@ You can first squash all commits to one commit (Refer 20). Once ready rebase the
 
 <br>
 
-### 24. I have made changes and committed to a branch. I want to move the same changes to another branch.
+### 24. I have made changes and committed to a branch. I want to copy the same changes to another branch.
 
 I copy the changes of a commit from one branch to another, you can use **cherry pick**.
 
-<img width="653" alt="image" src="https://user-images.githubusercontent.com/12962887/181592815-485eda40-fd6a-4209-8765-4983d2d94254.png">
+<img width="607" alt="image" src="https://user-images.githubusercontent.com/12962887/181609051-5ced1192-0372-45f9-97bf-3491ce070fbf.png">
 
 <img width="719" alt="image" src="https://user-images.githubusercontent.com/12962887/181591132-b43e8c0c-609b-4a25-9150-58d7e66b2d5e.png">
 
@@ -450,7 +450,7 @@ I copy the changes of a commit from one branch to another, you can use **cherry 
 
 <br>
 
-### 25. I have pushed pushed my changes and got it merged. I want to revert it immediately. How can I do that?
+### 25. I have pushed pushed my changes and got it merged. I want to revert it immediately.
 
 Revert
 
