@@ -367,15 +367,22 @@ Note: You may have to run `git rebase --continue` multiple times if there are mu
 
 <br>
 
-### 20. I have many commits. How can I make them into a single commit?
+### 20. I have many commits. How can I transform them into a single commit (squash)?
 
-Squash. TODO
+Converting multiple commits into one is known as **Squashing**. We will achieve this by rebasing with the help of interactive feature of editor (VSCode). This will be both easier and simple.
+
+- Run `git rebase -i HEAD~<n>` (here n refers to number of commits to squash)
+- Mark all the commits as 'Sqaush' except the oldest one
+- Click on 'Start rebase'
+- Enter the commit message
 
 <img width="654" alt="Screenshot 2022-07-28 at 6 55 42 PM" src="https://user-images.githubusercontent.com/12962887/181516582-3493d359-0e04-4679-9b9b-2c120aa1adf9.png">
 
 ![image](https://user-images.githubusercontent.com/12962887/181514663-9e04cc4a-45f3-41b5-9a4b-bde2f6fda1d5.png)
 
 ![image](https://user-images.githubusercontent.com/12962887/181516003-21e0a84f-30c5-47ce-9466-f1a68b7dc697.png)
+
+Note: If you had already pushed the commits, then you will have use the command `git push -f` to reflect sqaush on the remote branch as well.
 
 <br>
 <br>
@@ -384,9 +391,14 @@ Squash. TODO
 
 <br>
 
-### 21. Rebase with undo
+### 21. I have many commits. How can I transform them into a single commit (squash) with just commands?
 
-Cherry pick. TODO
+You can use the technique of undo to achieve this easily.
+
+- Undo the number of commit you need to squash `git reset --soft HEAD~<n>`
+- Commit them again `git commit -m 'Commit message'`
+
+Note: If you had already pushed the commits, then you will have use the command `git push -f` to reflect sqaush on the remote branch as well.
 
 <br>
 <br>
@@ -397,7 +409,7 @@ Cherry pick. TODO
 
 ### 22. I am trying to rebase my branch with same or other branch. As I have many commits, I am getting lot of conflicts on every commit rebase.
 
-In such cases, you can first squash all commits to one commit (Refer 20). Once ready rebase the branch and resolve all conflicts in a single go.
+You can first squash all commits to one commit (Refer 20). Once ready rebase the branch and resolve all conflicts in a single go.
 
 <br>
 <br>
@@ -408,7 +420,13 @@ In such cases, you can first squash all commits to one commit (Refer 20). Once r
 
 ### 23. I have made changes and committed to a branch. I want to move the same changes to another branch. 
 
-Cherry pick. TODO
+I copy the changes of a commit from one branch to another, you can use **cherry pick**.
+
+<img width="653" alt="image" src="https://user-images.githubusercontent.com/12962887/181592815-485eda40-fd6a-4209-8765-4983d2d94254.png">
+
+<img width="719" alt="image" src="https://user-images.githubusercontent.com/12962887/181591132-b43e8c0c-609b-4a25-9150-58d7e66b2d5e.png">
+
+<img width="719" alt="image" src="https://user-images.githubusercontent.com/12962887/181591920-d5c07c1e-3347-4ec5-8352-b3dd7561e109.png">
 
 <br>
 <br>
@@ -439,7 +457,7 @@ Reset. TODO
 
 <br>
 
-### 26. I want to rename remote branch.
+### 26. I want to rename my local and remote branch.
 
 Reset. TODO
 
@@ -450,7 +468,7 @@ Reset. TODO
 
 <br>
 
-### 27. I want delete previous commit of my brnach which I have already pushed. I am not looking for revert. I just want to delete it really.
+### 27. I want to delete/undo previous commit from my branch which I have already pushed. I am not looking for revert. I just want to delete it really.
 
 Undo. TODO
 
