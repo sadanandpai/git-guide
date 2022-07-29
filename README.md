@@ -1,11 +1,13 @@
 <div align="center">
   <h1>Git Lean Guide</h1>
-  Lean but practical guide to every day Git commands
+  <h3>Lean but practical guide to every day Git commands</h3>
   
   <img width="654" alt="image" src="https://user-images.githubusercontent.com/12962887/170864903-b331fc72-71f6-429b-81d4-b5cceb9d4b9f.png" />
+  
+  <h4>Solutions to 80% of your daily git challenges</h4>
 </div>
 
-<br><br>
+<br>
 
 ---
 
@@ -451,7 +453,36 @@ To copy the changes of a commit from one branch to another, you can use **cherry
 
 <img width="607" alt="image" src="https://user-images.githubusercontent.com/12962887/181609051-5ced1192-0372-45f9-97bf-3491ce070fbf.png">
 
+<br>
+<br>
+
+---
+
+<br>
+
+### 25. I have tried to cherry-pick as shown in 25. But I am getting conflicts.
+
+If you get any conflicts, resolve the conflicts first. Once all the conflicts are resolved, they continue the cherry-pick.
+
+- Add resolved files to stage `git add <file-paths>`
+- Continue cherry-pick `git cherry-pick --continue`
+
 <img width="719" alt="image" src="https://user-images.githubusercontent.com/12962887/181591132-b43e8c0c-609b-4a25-9150-58d7e66b2d5e.png">
+
+<br>
+<br>
+
+---
+
+<br>
+
+### 26. I have multiple commits which I want to move to a different branch.
+
+To copy a range of commits from one branch to another, you can notedown the older commit id from history and newer commit id.
+
+- Checkout the branch `git checkout <destination-branch>`
+- Cherry pick the commit `git cherry-pick <old-commit-id>..<new-commit-id>`
+
 
 <img width="719" alt="image" src="https://user-images.githubusercontent.com/12962887/181591920-d5c07c1e-3347-4ec5-8352-b3dd7561e109.png">
 
@@ -462,7 +493,7 @@ To copy the changes of a commit from one branch to another, you can use **cherry
 
 <br>
 
-### 25. I have pushed pushed my changes and got it merged. I want to revert it immediately.
+### 27. I have pushed pushed my changes and got it merged. I want to revert it immediately.
 
 Revert creates a reverse commit where the changes made will reversed and is created as a new commit. To revert a particular commit, first obtain its commit id.
 
@@ -478,7 +509,7 @@ Revert creates a reverse commit where the changes made will reversed and is crea
 
 <br>
 
-### 26. How do I set the complete codebase of my branch to codebase of a different branch?
+### 28. How do I set the complete codebase of my branch to codebase of a different branch?
 
 To reset a branch to a different brnach, you codebase on that brnach will become same as other brnach. To achieve this, you can user 'reset' command.
 
@@ -496,7 +527,7 @@ In this case, 'your-branch-name' will match the codebase of 'source-branch'
 
 <br>
 
-### 27. I want to delete/undo previous commit from my branch which I have already pushed. I am not looking for revert. I just want to delete it really.
+### 29. I want to delete/undo previous commit from my branch which I have already pushed. I am not looking for revert. I just want to delete it really.
 
 Revert will reverse the changes creating a new commit. If you want to remove the previous commit, then you can undo and force push the branch.
 
