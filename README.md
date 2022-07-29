@@ -444,7 +444,10 @@ You can first squash all commits to one commit (Refer 20). Once ready rebase the
 
 ### 24. I have made changes and committed to a branch. I want to copy the same changes to another branch.
 
-I copy the changes of a commit from one branch to another, you can use **cherry pick**.
+To copy the changes of a commit from one branch to another, you can use **cherry pick**. First obtain its commit id of the commit, which you want to copy.
+
+- Checkout the branch `git checkout <destination-branch>`
+- Cherry pick the commit `git cherry-pick <commit-id>`
 
 <img width="607" alt="image" src="https://user-images.githubusercontent.com/12962887/181609051-5ced1192-0372-45f9-97bf-3491ce070fbf.png">
 
@@ -461,7 +464,10 @@ I copy the changes of a commit from one branch to another, you can use **cherry 
 
 ### 25. I have pushed pushed my changes and got it merged. I want to revert it immediately.
 
-Revert
+Revert creates a reverse commit where the changes made will reversed and is created as a new commit. To revert a particular commit, first obtain its commit id.
+
+- Revert the commit `git revert <commit-id>`
+- Push the commit `git push`
 
 <img width="808" alt="image" src="https://user-images.githubusercontent.com/12962887/181597059-5d121194-9f29-425a-bcc1-7cb466856187.png">
 
@@ -472,9 +478,14 @@ Revert
 
 <br>
 
-### 26. How do I reset a branch to some other branch?
+### 26. How do I set the complete codebase of my branch to codebase of a different branch?
 
-Reset
+To reset a branch to a different brnach, you codebase on that brnach will become same as other brnach. To achieve this, you can user 'reset' command.
+
+- Checkout to the branch `git checkout <your-branch-bame>`
+- Reset with the branch name `git reset --hard <source-branch>`
+
+In this case, 'your-branch-name' will match the codebase of 'source-branch'
 
 <img width="588" alt="image" src="https://user-images.githubusercontent.com/12962887/181597315-05e8bd39-f9af-40f3-a104-8a11b8ffb52b.png">
 
@@ -485,22 +496,16 @@ Reset
 
 <br>
 
-### 27. I want to rename my local and remote branch.
+### 27. I want to delete/undo previous commit from my branch which I have already pushed. I am not looking for revert. I just want to delete it really.
 
-<img width="752" alt="image" src="https://user-images.githubusercontent.com/12962887/181599454-22970ea6-8ee4-424c-acfb-5c0c17179c4a.png">
+Revert will reverse the changes creating a new commit. If you want to remove the previous commit, then you can undo and force push the branch.
 
-<br>
-<br>
-
----
-
-<br>
-
-### 28. I want to delete/undo previous commit from my branch which I have already pushed. I am not looking for revert. I just want to delete it really.
-
-Undo
+- Reset by undo `git reset --hard HEAD~<n>` (n is the number of commits to undo)
+- Push the changes `git push -f`
 
 <img width="707" alt="image" src="https://user-images.githubusercontent.com/12962887/181600183-a5fb2095-d0cc-4c4e-ae68-3f4eea209979.png">
+
+Note: Force push is needed as the history of the branch is changing in this. If the commit is not pushed then it is not needed
 
 <br>
 <br>
