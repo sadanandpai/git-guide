@@ -518,7 +518,7 @@ Revert creates a reverse commit where the changes made will reversed and is crea
 
 <br>
 
-### 28. How do I set the complete codebase of my branch to codebase of a different branch?
+### 28. How do I set the complete codebase of my branch to codebase to a different branch?
 
 To reset a branch to a different branch, you codebase on that branch will become same as other branch. To achieve this, you can user 'reset' command.
 
