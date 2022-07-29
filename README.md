@@ -2,6 +2,12 @@
   <h1>Git Lean Guide</h1>
   <h3>Lean but practical guide to every day Git commands</h3>
   
+  <p>
+    <a name="stars"><img src="https://img.shields.io/github/stars/sadanandpai/git-lean-guide?style=for-the-badge"></a>
+    <a name="forks"><img src="https://img.shields.io/github/forks/sadanandpai/git-lean-guide?logoColor=green&style=for-the-badge"></a>
+    <a name="license"><img src="https://img.shields.io/github/license/sadanandpai/git-lean-guide?style=for-the-badge"></a>
+  </p>
+  
   <img width="654" alt="image" src="https://user-images.githubusercontent.com/12962887/170864903-b331fc72-71f6-429b-81d4-b5cceb9d4b9f.png" />
   
   <h4>Solutions to 80% of your daily git challenges</h4>
@@ -543,3 +549,9 @@ Note: Force push is needed as the history of the branch is changing in this. If 
 
 <br>
 <br>
+
+---
+
+### License
+
+This repository is MIT licensed. [Read more](./LICENSE)
