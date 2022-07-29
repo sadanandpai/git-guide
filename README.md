@@ -470,7 +470,7 @@ To copy the changes of a commit from one branch to another, you can use **cherry
 
 <br>
 
-### 25. I have tried to cherry-pick as shown in 25. But I am getting conflicts.
+### 25. I have tried to cherry-pick as shown in [24](https://github.com/sadanandpai/git-lean-guide/edit/main/README.md#24-i-have-made-changes-and-committed-to-a-branch-i-want-to-copy-the-same-changes-to-another-branch). But I am getting conflicts.
 
 If you get any conflicts, resolve the conflicts first. Once all the conflicts are resolved, they continue the cherry-pick.
 
