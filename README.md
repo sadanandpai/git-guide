@@ -234,6 +234,15 @@ Note: If `-d` does not allow to delete a branch, use the `d`. Example: `git bran
 
 ### 14. I want to rename my local and remote branch. How can I do it?
 
+To rename a branch, checkout to the branch and rename it.
+
+- Checkout other branch `git checkout <your-branch-name>`
+- Rename your branch `git branch -m <new-branch-name>`
+- Push to remote `git push <remote> :<your-branch> <new-branch-name>`
+- Set upstream `git push <remote> -u <new-branch-name>`
+
+&lt;remote&gt; is usually origin
+
 <img width="752" alt="image" src="https://user-images.githubusercontent.com/12962887/181599454-22970ea6-8ee4-424c-acfb-5c0c17179c4a.png">
 
 <br>
