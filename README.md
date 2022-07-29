@@ -219,7 +219,7 @@ To delete a branch in locally, checkout out a different branch than the one you 
 - Delete branch `git branch -d <branch-name>`
 
 To delete the branch from remote as well
-- Delete remote branch `git push -d <remote> <branch-name>
+- Delete remote branch `git push -d <remote> <branch-name>`
 
 <img width="808" alt="image" src="https://user-images.githubusercontent.com/12962887/181604592-a08d6cd4-105e-460b-b694-558f4fcf9680.png">
 
