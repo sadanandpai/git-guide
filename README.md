@@ -74,12 +74,12 @@ First stage all the files and then commit your changes. You can create multiple 
 
 <br>
 
-### 5. What if I want only some of files added and pushed instead of all the changes?
+### 5. What if I want only some of my files added and pushed instead of all the changes?
 
 You can add files by mentioning the file/files with relative or fulll path. You can add file one by one or multiple files at a time using the commands
 
-- Add single file `git add <file-name>`
-- Add multiple files `git add <file1-name> <file2-name>`
+- Add single file `git add <file-path>`
+- Add multiple files `git add <file1-name> <file2-path>`
 
 <img width="619" alt="add" src="https://user-images.githubusercontent.com/12962887/180643543-7ca529df-5126-4a73-9dd1-703af2f03fba.png">
 
@@ -94,7 +94,7 @@ Similarly, to unstage a file use the command `git reset <file>`
 ### 6. I have modified/formatted some code while going through. Now I want the code to be back to the state as it was.
 
 - To reset all the changes `git reset --hard`
-- To reset a single file `git checkout HEAD -- <file-name>`
+- To reset a single file `git checkout HEAD -- <file-path>`
 
 <img width="719" alt="reset" src="https://user-images.githubusercontent.com/12962887/180649258-1dddabf1-bdc2-4706-a537-26eaad4ba99e.png">
 <br>
@@ -167,6 +167,7 @@ To switch between the branches use the command `git checkout <original-branch-na
 <img width="555" alt="branch out" src="https://user-images.githubusercontent.com/12962887/173236172-30ccb855-0b2c-47ae-a711-152f20bc3b67.png">
 
 Note: `my-branch-name` is your local branch and not available for anyone else unless you push it
+
 <br>
 <br>
 
@@ -271,6 +272,7 @@ To move the changes from your local machine to online (called origin), follow be
 - Push the changes `git push`
 
 <img width="828" alt="image" src="https://user-images.githubusercontent.com/12962887/170865776-dea5f82e-6ae6-4f60-b70a-0fc8d37fd741.png">
+
 <br>
 <br>
 
@@ -289,6 +291,7 @@ Yes. You can update the commit even after it is pushed. Everything will follow a
 <img width="783" alt="image" src="https://user-images.githubusercontent.com/12962887/180615816-743abb81-765c-4723-b44f-faf00da3a820.png">
 
 Note: You need to be very careful while pushing forcefully, as it may eliminate other commits if someone has done in between. Make sure you are working on the branch and no one else is similutaneous working on the same or branching out from the branch at your commit.
+
 <br>
 <br>
 
@@ -320,9 +323,9 @@ If there are conflicts, then resolve them manually to proceed ahead as shown bel
 If there are code changes on the smae region from multiple commits, the conflicts will occur. You need resolve all the conflicts and proceed.
 
 - Resolve all the conflicts
-- `git add <file-path>`
-- `git merge --continue`
-- `git push`
+- Stage files `git add <file-path>`
+- Continue the merge `git merge --continue`
+- Push the changes `git push`
 
 ![pull conflict](https://user-images.githubusercontent.com/12962887/180636539-cad6c7ae-ec56-41e0-9ff0-21dd5e95382f.png)
 
@@ -339,15 +342,16 @@ Note: If something goes wrong, in any of the above steps, then there is nothing 
 
 Yes. You can pull the changes without a merge. This is called as **Rebase**. I know you have heard it a lot. It is very simple though.
 
-- `git pull --rebase`
-- After success, `git push`
+- Pull with rebase `git pull --rebase`
+- Push the cahnges `git push`
 
 <img width="982" alt="rebase" src="https://user-images.githubusercontent.com/12962887/181307242-3b2ff96a-1896-43b2-814c-e22cfbc50320.png">
 
 If you get conflicts, then solve all the conflicts. Then
 
 - `git rebase --continue`
-- After success, `git push`
+- Resolve all conflicts
+- Push the changes `git push`
 
 ![image](https://user-images.githubusercontent.com/12962887/181306723-5d1929bf-2d7f-4648-bb2e-534f26ae4a34.png)
 
@@ -362,9 +366,16 @@ Note: If something goes wrong, in any of the above steps, then there is nothing 
 
 ### 20. I have raised a PR. But it is showing conflicts.
 
-![PR conflict](https://user-images.githubusercontent.com/12962887/181507186-92a6c427-553c-4c1e-b87a-0394d23a1bad.png)
+<img height="600px" src="https://user-images.githubusercontent.com/12962887/181507186-92a6c427-553c-4c1e-b87a-0394d23a1bad.png" alt="pr conflict" />
 
-PR will show conflicts if the new changes added to the source branch is conflicting with your changes or your branch is lagging. You can either **merge** the changes to your branch or **rebase** your branch. **Follow any of them.**
+PR will show conflicts if the new changes added to the source branch is conflicting with your changes or your branch is lagging. 
+
+There are 2 main approaches to solve this.
+
+- [Merge approach](#merge-approach)
+- [Rebase approach](#rebase-approach)
+
+**Follow any one of the approaches.** Dont try both of them.
 
 Assuming that your branch is `develop` and source branch is `main`
 
@@ -443,9 +454,8 @@ Note: If you had already pushed the commits, then you will have use the command 
 
 ### 23. I am trying to rebase my branch with same or other branch. As I have many commits, I am getting lot of conflicts on every commit rebase.
 
-- You can first squash all commits to one commit (Refer [21](https://github.com/sadanandpai/git-lean-guide/blob/main/README.md#21-i-have-many-commits-how-can-i-transform-them-into-a-single-commit-squash)).
-
-- Once done, rebase the branch and resolve all conflicts in a single go. (Refer [20](https://github.com/sadanandpai/git-lean-guide/blob/main/README.md#rebase-approach))
+- You can first squash all commits to one commit (Refer [21](#21-i-have-many-commits-how-can-i-transform-them-into-a-single-commit-squash)).
+- Once done, rebase the branch and resolve all conflicts in a single go. (Refer [20](#rebase-approach))
 
 <br>
 <br>
@@ -470,7 +480,7 @@ To copy the changes of a commit from one branch to another, you can use **cherry
 
 <br>
 
-### 25. I have tried to cherry-pick as shown in [24](https://github.com/sadanandpai/git-lean-guide/edit/main/README.md#24-i-have-made-changes-and-committed-to-a-branch-i-want-to-copy-the-same-changes-to-another-branch). But I am getting conflicts.
+### 25. I have tried to cherry-pick as shown in [24](#24-i-have-made-changes-and-committed-to-a-branch-i-want-to-copy-the-same-changes-to-another-branch). But I am getting conflicts.
 
 If you get any conflicts, resolve the conflicts first. Once all the conflicts are resolved, they continue the cherry-pick.
 
