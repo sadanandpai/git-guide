@@ -59,7 +59,7 @@ By default the main/master branch is active. Ask which branch has the relevant c
 
 ### 3. Someone has made few changes in the code and asked me to pull those changes. What should I do?
 
-- Enter the command `git pull`
+- Pull the changes `git pull`
 
 <img width="587" alt="pull" src="https://user-images.githubusercontent.com/12962887/173235993-7f2ba191-d9bb-4a78-aec3-35f326e46325.png">
 <br>
@@ -73,7 +73,7 @@ By default the main/master branch is active. Ask which branch has the relevant c
 
 First stage all the files and then commit your changes. You can create multiple commits.
 
-- Enter the command `git add *`
+- Stage the files `git add *`
 - Commit the changes `git commit -m 'You commit message'`
 
 <img width="608" alt="commit" src="https://user-images.githubusercontent.com/12962887/180645381-c77af0e5-6d4c-4991-84d7-1572636e34a3.png">
@@ -89,11 +89,12 @@ First stage all the files and then commit your changes. You can create multiple 
 You can add files by mentioning the file/files with relative or fulll path. You can add file one by one or multiple files at a time using the commands
 
 - Add single file `git add <file-path>`
-- Add multiple files `git add <file1-name> <file2-path>`
+- Add multiple files `git add <file1-path> <file2-path>`
 
 <img width="619" alt="add" src="https://user-images.githubusercontent.com/12962887/180643543-7ca529df-5126-4a73-9dd1-703af2f03fba.png">
 
 Similarly, to unstage a file use the command `git reset <file>`
+
 <br>
 <br>
 
@@ -107,6 +108,7 @@ Similarly, to unstage a file use the command `git reset <file>`
 - To reset a single file `git checkout HEAD -- <file-path>`
 
 <img width="719" alt="reset" src="https://user-images.githubusercontent.com/12962887/180649258-1dddabf1-bdc2-4706-a537-26eaad4ba99e.png">
+
 <br>
 <br>
 
@@ -157,6 +159,7 @@ If there are changes in the code on the region of the stashed code, it is expect
 
 Below is the view of the VSCode, which helps in easily resolving the conflicts.
 ![VSCode conflict](https://user-images.githubusercontent.com/12962887/180612978-fffd4307-0045-4fd3-b52c-394d1d9a0059.png)
+
 <br>
 <br>
 
@@ -206,11 +209,11 @@ Note: The `amend` updates the previous commit without creating new one on top of
 
 <br>
 
-### 12. I am asked to raise a PR to a branch. What am I supposed to do?
+### 12. I am asked to raise a Pull Request (PR) to a branch. What am I supposed to do?
 
 You can follow the same steps as given in the previous question. Once done you will push the code and raise a PR. Its that simple. Here we assume you are on 'develop' branch and raising PR to 'main' branch.
 
-- Enter the command `git checkout -b <my-branch-name>`
+- Create a new branch `git checkout -b <my-branch-name>`
 - Stage all the changes `git add *`
 - Commit the changes `git commit -m "<some commit message>"`
 - Push the chages `git push` (as the branch is not present on the remote, it will show the command to use)
@@ -273,11 +276,11 @@ To rename a branch, checkout to the branch and rename it.
 
 <br>
 
-### 15. I have made some changes to the code on the branch on which all of the developers are working. How can my make my changes published directly without a PR?
+### 15. I have made some changes to the code on the branch on which all of the developers are working. How can I publish my changes?
 
-To move the changes from your local machine to online (called origin), follow below steps in your terminal
+To move the changes from your local machine to remote (called origin), follow below steps in your terminal
 
-- Add the changed files `git add *`
+- Stage the files `git add *`
 - Commit the changes `git commit -m "<some commit message>"`
 - Push the changes `git push`
 
@@ -374,7 +377,7 @@ Note: If something goes wrong, in any of the above steps, then there is nothing 
 
 <br>
 
-### 20. I have raised a PR. But it is showing conflicts.
+### 20. I have raised a PR (Pull Request). But it is showing conflicts.
 
 <img height="600px" src="https://user-images.githubusercontent.com/12962887/181507186-92a6c427-553c-4c1e-b87a-0394d23a1bad.png" alt="pr conflict" />
 
@@ -538,9 +541,9 @@ Revert creates a reverse commit where the changes made will reversed and is crea
 
 <br>
 
-### 28. How do I set the complete codebase of my branch to codebase to a different branch?
+### 28. How do I reset code of my branch to code of a different branch?
 
-To reset a branch to a different branch, you codebase on that branch will become same as other branch. To achieve this, you can user 'reset' command.
+When reset a branch to a different branch, your codebase on your branch will become same as other branch. To achieve this, you can user 'reset' command.
 
 - Checkout to the branch `git checkout <your-branch-bame>`
 - Reset with the branch name `git reset --hard <source-branch>`
