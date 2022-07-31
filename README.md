@@ -26,7 +26,17 @@
 - Navigate to the location in the terminal where you want your project to be cloned
 - Enter the command `git clone url`
 
+The repo url can be found inside repo.
+
 <img width="905" alt="repo clone" src="https://user-images.githubusercontent.com/12962887/170861577-d7111658-96df-4b43-918b-2e2ab3395efd.png">
+
+<b>Github repo link example</b>
+![image](https://user-images.githubusercontent.com/12962887/182018086-bea2688f-baf8-47ab-9d27-4c390355464f.png)
+
+<b>Bitbucket repo link example</b>
+![image](https://user-images.githubusercontent.com/12962887/182018164-7d2f6bcd-517e-4793-925d-afe61c39032c.png)
+
+
 <br>
 <br>
 
