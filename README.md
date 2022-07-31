@@ -502,6 +502,8 @@ If you get any conflicts, resolve the conflicts first. Once all the conflicts ar
 
 <img width="719" alt="cherry pick conflict" src="https://user-images.githubusercontent.com/12962887/181591132-b43e8c0c-609b-4a25-9150-58d7e66b2d5e.png">
 
+Note: If something goes wrong in between, reset the process by using the command `git cherry-pick --abort` (You can start the process again)
+
 <br>
 <br>
 
