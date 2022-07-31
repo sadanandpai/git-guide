@@ -333,7 +333,7 @@ If there are conflicts, then resolve them manually to proceed ahead as shown bel
 
 ### 18. I followed the above steps, but getting conflicts after git pull.
 
-If there are code changes on the smae region from multiple commits, the conflicts will occur. You need resolve all the conflicts and proceed.
+If there are code changes on the same region from multiple commits, the conflicts will occur. You need resolve all the conflicts and proceed.
 
 - Resolve all the conflicts
 - Stage files `git add <file-path>`
