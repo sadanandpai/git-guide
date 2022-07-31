@@ -21,12 +21,12 @@
 
 ### 1. I want to clone a project and start going through the code
 
-- Get the repo url/link
+- Get the repo URL/link
 - Open your terminal
 - Navigate to the location in the terminal where you want your project to be cloned
-- Enter the command `git clone url`
+- Enter the command `git clone URL`
 
-The repo url can be found inside repo.
+The repo URL can be found inside the repo.
 
 <img width="905" alt="repo clone" src="https://user-images.githubusercontent.com/12962887/170861577-d7111658-96df-4b43-918b-2e2ab3395efd.png">
 
@@ -57,7 +57,7 @@ By default the main/master branch is active. Ask which branch has the relevant c
 
 <br>
 
-### 3. Someone has made few changes in the code and asked me to pull those changes. What should I do?
+### 3. Someone has made a few changes in the code and asked me to pull those changes. What should I do?
 
 - Pull the changes `git pull`
 
@@ -86,7 +86,7 @@ First stage all the files and then commit your changes. You can create multiple 
 
 ### 5. What if I want only some of my files added and pushed instead of all the changes?
 
-You can add files by mentioning the file/files with relative or fulll path. You can add file one by one or multiple files at a time using the commands
+You can add files by mentioning the file/files with relative or full path. You can add files one by one or multiple files at a time using the commands
 
 - Add single file `git add <file-path>`
 - Add multiple files `git add <file1-path> <file2-path>`
@@ -102,7 +102,7 @@ Similarly, to unstage a file use the command `git reset <file>`
 
 <br>
 
-### 6. I have modified/formatted some code while going through. Now I want the code to be back to the state as it was.
+### 6. I have modified/formatted some code while going through it. Now I want the code to be back to the state as it was.
 
 - To reset all the changes `git reset --hard`
 - To reset a single file `git checkout HEAD -- <file-path>`
@@ -118,7 +118,7 @@ Similarly, to unstage a file use the command `git reset <file>`
 
 ### 7. I have committed my changes. How can I undo my change?
 
-You can undo the commit resetting the HEAD. If you just want to undo the commit but let the changes be present then use `soft` attribute else if you do want the commit along with the changes then use `hard` attribute
+You can undo the commit by resetting the HEAD. If you just want to undo the commit but let the changes be present then use the `soft` attribute else if you do want the commit along with the changes then use the `hard` attribute
 
 - `git reset --soft HEAD~1` (undo with changes preserved)
 - `git reset --hard HEAD~1` (undo with changes removed)
@@ -130,11 +130,11 @@ You can undo the commit resetting the HEAD. If you just want to undo the commit 
 
 <br>
 
-### 8. I have made some changes in the branch. Also I wanted to pull the new changes. But it is not working.
+### 8. I have made some changes to the branch. Also, I wanted to pull the new changes. But it is not working.
 
-The command `git pull` may not work if the changes are done by someone else to the same files by to which you have also modified.
+The command `git pull` may not work if the changes are done by someone else to the same files which you have also modified.
 
-- Stash the canges `git stash save '<name of the change> -u`
+- Stash the changes `git stash save '<name of the change> -u`
 - Pull the changes now `git pull`
 - Retrieve the changes `git stash apply <n>`
 
@@ -153,7 +153,7 @@ Note: You can stash multiple changes and bring them back as and when you like to
 
 ### 9. After applying the stash, I am getting a lot of conflicts in the code.
 
-If there are changes in the code on the region of the stashed code, it is expected to get the conflicts. You will have manually resolve and the conflicts carefully.
+If there are changes in the code on the region of the stashed code, it is expected to get conflicts. You will have to manually resolve all the conflicts. (Do it carefully)
 
 <img width="596" alt="stash conflicts" src="https://user-images.githubusercontent.com/12962887/180613095-a8e08426-1d15-4a31-956b-55bfdfbdb84d.png">
 
@@ -169,7 +169,7 @@ Below is the view of the VSCode, which helps in easily resolving the conflicts.
 
 ### 10. I have made some code changes. But I want to commit to a new separate branch.
 
-You can create a separate branch out of the current branch and commit it. This works both if you have already made changes or yet to start making changes.
+You can create a separate branch out of the current branch and commit it. This works both if you have already made changes or are yet to start making changes.
 
 - Create a new branch `git checkout -b <my-branch-name>`
 - Stage all the changes `git add *`
@@ -188,7 +188,7 @@ Note: `my-branch-name` is your local branch and not available for anyone else un
 
 <br>
 
-### 11. I just committed but forgot to add few files to the commit. Is there a to update the same commit with some modifications?
+### 11. I just committed but forgot to add a few files to the commit. Is there a to update the same commit with some modifications?
 
 Yes. You can update the commit by amending your changes.
 
@@ -201,7 +201,7 @@ To update with new commit message `git commit --amend -m 'My new commit message'
 
 <img width="587" alt="amend" src="https://user-images.githubusercontent.com/12962887/180615625-baa2b6f5-2ca5-454a-bfbf-d7115537cdbf.png">
 
-Note: The `amend` updates the previous commit without creating new one on top of previous. (in reality, Git discards the previous commit and replaces it with new commit)
+Note: The `amend` updates the previous commit without creating a new one on top of the previous. (in reality, Git discards the previous commit and replaces it with a new commit)
 <br>
 <br>
 
@@ -211,17 +211,17 @@ Note: The `amend` updates the previous commit without creating new one on top of
 
 ### 12. I am asked to raise a Pull Request (PR) to a branch. What am I supposed to do?
 
-You can follow the same steps as given in the previous question. Once done you will push the code and raise a PR. Its that simple. Here we assume you are on 'develop' branch and raising PR to 'main' branch.
+You can follow the same steps as given in the previous question. Once done you will push the code and raise a PR. It's that simple. Here we assume you are on the 'develop' branch and raising PR to the 'main' branch.
 
 - Create a new branch `git checkout -b <my-branch-name>`
 - Stage all the changes `git add *`
 - Commit the changes `git commit -m "<some commit message>"`
-- Push the chages `git push` (as the branch is not present on the remote, it will show the command to use)
+- Push the changes `git push` (as the branch is not present on the remote, it will show the command to use)
 - Enter `git push --set-upstream origin <my-branch-name>`
 
 <img width="872" alt="" src="https://user-images.githubusercontent.com/12962887/180644568-b2fc1d78-399c-443d-b714-3ab1cafb83bd.png">
 
-The URL to raise the PR will be automatically available as shown above. Use the link and open in the browser.
+The URL to raise the PR will be automatically available as shown above. Use the link and open it in the browser.
 
 ![image](https://user-images.githubusercontent.com/12962887/180644608-ad9175df-64cd-4f8e-930c-64333ea2222a.png)
 
@@ -236,7 +236,7 @@ Now select the base branch to which you want to raise a PR and click on 'Create 
 
 ### 13. I do not want a branch anymore. How can I delete the branch?
 
-To delete a branch in locally, checkout out a different branch than the one you want to delete. Here we will delete the branch named 'develop'
+To delete a branch locally, check out a different branch than the one you want to delete. Here we will delete the branch named 'develop'
 
 - Switch to other branch `git checkout <other-branch>`
 - Delete branch `git branch -d <branch-name>`
@@ -256,11 +256,11 @@ Note: If `-d` does not allow to delete a branch, use the `d`. Example: `git bran
 
 <br>
 
-### 14. I want to rename my local and remote branch. How can I do it?
+### 14. I want to rename my local and remote branches. How can I do it?
 
 To rename a branch, checkout to the branch and rename it.
 
-- Checkout other branch `git checkout <your-branch-name>`
+- Check out other branch `git checkout <your-branch-name>`
 - Rename your branch `git branch -m <new-branch-name>`
 - Push to remote `git push <remote> :<your-branch> <new-branch-name>`
 - Set upstream `git push <remote> -u <new-branch-name>`
@@ -278,7 +278,7 @@ To rename a branch, checkout to the branch and rename it.
 
 ### 15. I have made some changes to the code on the branch on which all of the developers are working. How can I publish my changes?
 
-To move the changes from your local machine to remote (called origin), follow below steps in your terminal
+To move the changes from your local machine to remote (called origin), follow the below steps in your terminal
 
 - Stage the files `git add *`
 - Commit the changes `git commit -m "<some commit message>"`
@@ -303,7 +303,7 @@ Yes. You can update the commit even after it is pushed. Everything will follow a
 
 <img width="783" alt="image" src="https://user-images.githubusercontent.com/12962887/180615816-743abb81-765c-4723-b44f-faf00da3a820.png">
 
-Note: You need to be very careful while pushing forcefully, as it may eliminate other commits if someone has done in between. Make sure you are working on the branch and no one else is similutaneous working on the same or branching out from the branch at your commit.
+Note: You need to be very careful while pushing forcefully, as it may eliminate other commits if someone has done in between. Make sure you are working on the branch and no one else is simultaneously working on the same or branching out from the branch at your commit.
 
 <br>
 <br>
@@ -331,9 +331,9 @@ If there are conflicts, then resolve them manually to proceed ahead as shown bel
 
 <br>
 
-### 18. I followed the above steps, but getting conflicts after git pull.
+### 18. I followed the above steps but got conflicts after git pull.
 
-If there are code changes on the same region from multiple commits, the conflicts will occur. You need resolve all the conflicts and proceed.
+If there are code changes on the same region from multiple commits, conflicts will occur. You need to resolve all the conflicts and proceed.
 
 - Resolve all the conflicts
 - Stage files `git add <file-path>`
@@ -342,7 +342,7 @@ If there are code changes on the same region from multiple commits, the conflict
 
 ![pull conflict](https://user-images.githubusercontent.com/12962887/180636539-cad6c7ae-ec56-41e0-9ff0-21dd5e95382f.png)
 
-Note: If something goes wrong, in any of the above steps, then there is nothing to panic. Just run `git merge --abort` and redo the steps.
+Note: If something goes wrong, in any of the above steps, then there is nothing to panic about. Just run `git merge --abort` and redo the steps.
 
 <br>
 <br>
@@ -351,12 +351,12 @@ Note: If something goes wrong, in any of the above steps, then there is nothing 
 
 <br>
 
-### 19. I have created single/multiple commits. When I am trying to push my changes, getting a rejected message. Can I pull the new changes without merge commit (Rebase)?
+### 19. I have created single/multiple commits. When I am trying to push my changes, getting a rejected message. Can I pull the new changes without merging the commit (Rebase)?
 
-Yes. You can pull the changes without a merge. This is called as **Rebase**. I know you have heard it a lot. It is very simple though.
+Yes. You can pull the changes without a merge. This is called **Rebase**. I know you have heard it a lot. It is very simple though.
 
 - Pull with rebase `git pull --rebase`
-- Push the cahnges `git push`
+- Push the changes `git push`
 
 <img width="982" alt="rebase" src="https://user-images.githubusercontent.com/12962887/181307242-3b2ff96a-1896-43b2-814c-e22cfbc50320.png">
 
@@ -368,7 +368,7 @@ If you get conflicts, then solve all the conflicts. Then
 
 ![image](https://user-images.githubusercontent.com/12962887/181306723-5d1929bf-2d7f-4648-bb2e-534f26ae4a34.png)
 
-Note: If something goes wrong, in any of the above steps, then there is nothing to panic. Just run `git rebase --abort` and redo the steps.
+Note: If something goes wrong, in any of the above steps, then there is nothing to panic about. Just run `git rebase --abort` and redo the steps.
 
 <br>
 <br>
@@ -381,16 +381,16 @@ Note: If something goes wrong, in any of the above steps, then there is nothing 
 
 <img height="600px" src="https://user-images.githubusercontent.com/12962887/181507186-92a6c427-553c-4c1e-b87a-0394d23a1bad.png" alt="pr conflict" />
 
-PR will show conflicts if the new changes added to the source branch is conflicting with your changes or your branch is lagging. 
+PR will show conflicts if the new changes added to the source branch are conflicting with your changes or your branch is lagging. 
 
 There are 2 main approaches to solve this.
 
 - [Merge approach](#merge-approach)
 - [Rebase approach](#rebase-approach)
 
-**Follow any one of the approaches.** Dont try both of them.
+**Follow any one of the approaches.** Don't try both of them.
 
-Assuming that your branch is `develop` and source branch is `main`
+Assuming that your branch is `develop` and the source branch is `main`
 
 #### Merge approach
 
@@ -427,10 +427,10 @@ Note: You may have to run `git rebase --continue` multiple times if there are mu
 
 ### 21. I have many commits. How can I transform them into a single commit (squash)?
 
-Converting multiple commits into one is known as **Squashing**. We will achieve this by rebasing with the help of interactive feature of editor (VSCode). This will be both easier and simple.
+Converting multiple commits into one is known as **Squashing**. We will achieve this by rebasing with the help of the interactive feature of the editor (VSCode). This will be both easier and simple.
 
-- Run `git rebase -i HEAD~<n>` (here n refers to number of commits to squash)
-- Mark all the commits as 'Sqaush' except the oldest one
+- Run `git rebase -i HEAD~<n>` (where n refers to the number of commits to squash)
+- Mark all the commits as 'Squash' except the oldest one
 - Click on 'Start rebase'
 - Enter the commit message
 
@@ -440,7 +440,7 @@ Converting multiple commits into one is known as **Squashing**. We will achieve 
 
 ![image](https://user-images.githubusercontent.com/12962887/181516003-21e0a84f-30c5-47ce-9466-f1a68b7dc697.png)
 
-Note: If you had already pushed the commits, then you will have use the command `git push -f` to reflect sqaush on the remote branch as well.
+Note: If you had already pushed the commits, then you will have to use the command `git push -f` to reflect squash on the remote branch as well.
 
 <br>
 <br>
@@ -451,12 +451,12 @@ Note: If you had already pushed the commits, then you will have use the command 
 
 ### 22. I have many commits. How can I transform them into a single commit (squash) with just commands?
 
-You can use the technique of undo to achieve this easily.
+You can use the technique of undoing to achieve this easily.
 
-- Undo the number of commit you need to squash `git reset --soft HEAD~<n>`
+- Undo the number of commits you need to squash `git reset --soft HEAD~<n>`
 - Commit them again `git commit -m 'Commit message'`
 
-Note: If you had already pushed the commits, then you will have use the command `git push -f` to reflect sqaush on the remote branch as well.
+Note: If you had already pushed the commits, then you will have to use the command `git push -f` to reflect squash on the remote branch as well.
 
 <br>
 <br>
@@ -465,7 +465,7 @@ Note: If you had already pushed the commits, then you will have use the command 
 
 <br>
 
-### 23. I am trying to rebase my branch with same or other branch. As I have many commits, I am getting lot of conflicts on every commit rebase.
+### 23. I am trying to rebase my branch with the same or another branch. As I have many commits, I am getting a lot of conflicts on every commit to rebase.
 
 - You can first squash all commits to one commit (Refer [21](#21-i-have-many-commits-how-can-i-transform-them-into-a-single-commit-squash)).
 - Once done, rebase the branch and resolve all conflicts in a single go. (Refer [20](#rebase-approach))
@@ -479,10 +479,10 @@ Note: If you had already pushed the commits, then you will have use the command 
 
 ### 24. I have made changes and committed to a branch. I want to copy the same changes to another branch.
 
-To copy the changes of a commit from one branch to another, you can use **cherry pick**. First obtain its commit id of the commit, which you want to copy.
+To copy the changes of a commit from one branch to another, you can use **cherry pick**. First obtain the commit id of the commit, which you want to copy.
 
 - Checkout the branch `git checkout <destination-branch>`
-- Cherry pick the commit `git cherry-pick <commit-id>`
+- Cherry-pick the commit `git cherry-pick <commit-id>`
 
 <img width="607" alt="cherry pick" src="https://user-images.githubusercontent.com/12962887/181609051-5ced1192-0372-45f9-97bf-3491ce070fbf.png">
 
@@ -511,7 +511,7 @@ If you get any conflicts, resolve the conflicts first. Once all the conflicts ar
 
 ### 26. I have multiple commits which I want to move to a different branch.
 
-To copy a range of commits from one branch to another, you can notedown the older commit id from history and newer commit id.
+To copy a range of commits from one branch to another, you can note down the older commit id from history and the newer commit id.
 
 - Checkout the branch `git checkout <destination-branch>`
 - Cherry pick the commit `git cherry-pick <old-commit-id>..<new-commit-id>`
@@ -525,9 +525,9 @@ To copy a range of commits from one branch to another, you can notedown the olde
 
 <br>
 
-### 27. I have pushed pushed my changes and got it merged. I want to revert it immediately.
+### 27. I have pushed my changes and got it merged. I want to revert it immediately.
 
-Revert creates a reverse commit where the changes made will reversed and is created as a new commit. To revert a particular commit, first obtain its commit id.
+Revert creates a reverse commit where the changes made will reverse and is created as a new commit. To revert a particular commit first, obtain its commit id.
 
 - Revert the commit `git revert <commit-id>`
 - Push the commit `git push`
@@ -541,9 +541,9 @@ Revert creates a reverse commit where the changes made will reversed and is crea
 
 <br>
 
-### 28. How do I reset code of my branch to code of a different branch?
+### 28. How do I reset the code of my branch to the code of a different branch?
 
-When reset a branch to a different branch, your codebase on your branch will become same as other branch. To achieve this, you can user 'reset' command.
+When resetting a branch to a different branch, the codebase on your branch will become the same as the other branch. To achieve this, you can use the 'reset' command.
 
 - Checkout to the branch `git checkout <your-branch-bame>`
 - Reset with the branch name `git reset --hard <source-branch>`
@@ -559,11 +559,11 @@ In this case, 'your-branch-name' will match the codebase of 'source-branch'
 
 <br>
 
-### 29. I want to delete/undo previous commit from my branch which I have already pushed. I am not looking for revert. I just want to delete it really.
+### 29. I want to delete/undo the previous commit from my branch which I have already pushed. I am not looking for a revert. I just want to delete it.
 
 Revert will reverse the changes creating a new commit. If you want to remove the previous commit, then you can undo and force push the branch.
 
-- Reset by undo `git reset --hard HEAD~<n>` (n is the number of commits to undo)
+- Reset by undoing `git reset --hard HEAD~<n>` (n is the number of commits to undo)
 - Push the changes `git push -f`
 
 <img width="707" alt="undo" src="https://user-images.githubusercontent.com/12962887/181600183-a5fb2095-d0cc-4c4e-ae68-3f4eea209979.png">
