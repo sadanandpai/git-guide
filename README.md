@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Git Lean Guide</h1>
-  <h3>Lean and Practical guide to every day Git commands</h3>
+  <h3>Lean and Practical guide to everyday Git commands</h3>
   
   <p>
     <a name="stars"><img src="https://img.shields.io/github/stars/sadanandpai/git-lean-guide?style=for-the-badge"></a>
