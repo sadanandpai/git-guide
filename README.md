@@ -21,7 +21,7 @@
 
 <br>
 
-### 1. I want to clone a project and start going through the code
+### 1. I want to clone a project and start going through the code.
 
 - Get the repo URL/link
 - Open your terminal
@@ -71,12 +71,12 @@ By default the main/master branch is active. Ask which branch has the relevant c
 
 <br>
 
-### 4. I have modified the code and added changes. How to commit my changes
+### 4. I have modified the code and added changes. How do I commit my changes?
 
 First stage all the files and then commit your changes. You can create multiple commits.
 
 - Stage the files `git add *`
-- Commit the changes `git commit -m 'You commit message'`
+- Commit the changes `git commit -m 'Your commit message'`
 
 <img width="608" alt="commit" src="https://user-images.githubusercontent.com/12962887/180645381-c77af0e5-6d4c-4991-84d7-1572636e34a3.png">
 <br>
@@ -136,7 +136,7 @@ You can undo the commit by resetting the HEAD. If you just want to undo the comm
 
 The command `git pull` may not work if the changes are done by someone else to the same files which you have also modified.
 
-- Stash the changes `git stash save '<name of the change> -u`
+- Stash the changes `git stash save <name of the change> -u`
 - Pull the changes now `git pull`
 - Retrieve the changes `git stash apply <n>`
 
@@ -190,7 +190,7 @@ Note: `my-branch-name` is your local branch and not available for anyone else un
 
 <br>
 
-### 11. I just committed but forgot to add a few files to the commit. Is there a to update the same commit with some modifications?
+### 11. I just committed but forgot to add a few files to the commit. Is there a way to update the same commit with some modifications?
 
 Yes. You can update the commit by amending your changes.
 
@@ -572,7 +572,7 @@ Revert will reverse the changes creating a new commit. If you want to remove the
 
 <img width="707" alt="undo" src="https://user-images.githubusercontent.com/12962887/181600183-a5fb2095-d0cc-4c4e-ae68-3f4eea209979.png">
 
-Note: Force push is needed as the history of the branch is changing in this. If the commit is not pushed then it is not needed
+Note: Force push is needed as the history of the branch is changing in this. If the commit is not pushed then it is not needed.
 
 <br>
 <br>
