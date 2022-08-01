@@ -247,7 +247,7 @@ To delete the branch from remote as well
 
 <img width="808" alt="image" src="https://user-images.githubusercontent.com/12962887/181604592-a08d6cd4-105e-460b-b694-558f4fcf9680.png">
 
-Note: If `-d` does not allow to delete a branch, use the `d`. Example: `git branch -D <branch-name>`
+Note: If `-d` does not allow to delete a branch, use the `-D`. Example: `git branch -D <branch-name>`
 
 <br>
 <br>
