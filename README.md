@@ -21,7 +21,7 @@
 
 <br>
 
-### 1. I want to clone a project and start going through the code
+### 1. I want to clone a project and start going through the code.
 
 - Get the repo URL/link
 - Open your terminal
