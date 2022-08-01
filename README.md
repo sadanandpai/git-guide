@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Git Lean Guide</h1>
+  <h1>Git Practical Guide</h1>
   <h3>Lean and Practical guide to everyday Git commands</h3>
   
   <p>
