@@ -21,37 +21,35 @@
 
 ### Contents
 
-- [1. I want to clone a project and start going through the code.](#1-i-want-to-clone-a-project-and-start-going-through-the-code)
-- [2. I have cloned the repo. But I am not able to see the proper code!!!](#2-i-have-cloned-the-repo-but-i-am-not-able-to-see-the-proper-code)
-- [3. Someone has made a few changes in the code and asked me to pull those changes. What should I do?](#3-someone-has-made-a-few-changes-in-the-code-and-asked-me-to-pull-those-changes-what-should-i-do)
-- [4. I have modified the code and added changes. How do I commit my changes?](#4-i-have-modified-the-code-and-added-changes-how-do-i-commit-my-changes)
-- [5. What if I want only some of my files added and pushed instead of all the changes?](#5-what-if-i-want-only-some-of-my-files-added-and-pushed-instead-of-all-the-changes)
-- [6. I have modified/formatted some code while going through it. Now I want the code to be back to the state as it was.](#6-i-have-modifiedformatted-some-code-while-going-through-it-now-i-want-the-code-to-be-back-to-the-state-as-it-was)
-- [7. I have committed my changes. How can I undo my change?](#7-i-have-committed-my-changes-how-can-i-undo-my-change)
-- [8. I have made some changes to the branch. Also, I wanted to pull the new changes. But it is not working.](#8-i-have-made-some-changes-to-the-branch-also-i-wanted-to-pull-the-new-changes-but-it-is-not-working)
-- [9. After applying the stash, I am getting a lot of conflicts in the code.](#9-after-applying-the-stash-i-am-getting-a-lot-of-conflicts-in-the-code)
-- [10. I have made some code changes. But I want to commit to a new separate branch.](#10-i-have-made-some-code-changes-but-i-want-to-commit-to-a-new-separate-branch)
-- [11. I just committed but forgot to add a few files to the commit. Is there a way to update the same commit with some modifications?](#11-i-just-committed-but-forgot-to-add-a-few-files-to-the-commit-is-there-a-way-to-update-the-same-commit-with-some-modifications)
-- [12. I am asked to raise a Pull Request (PR) to a branch. What am I supposed to do?](#12-i-am-asked-to-raise-a-pull-request-pr-to-a-branch-what-am-i-supposed-to-do)
-- [13. I do not want a branch anymore. How can I delete the branch?](#13-i-do-not-want-a-branch-anymore-how-can-i-delete-the-branch)
-- [14. I want to rename my local and remote branches. How can I do it?](#14-i-want-to-rename-my-local-and-remote-branches-how-can-i-do-it)
-- [15. I have made some changes to the code on the branch on which all of the developers are working. How can I publish my changes?](#15-i-have-made-some-changes-to-the-code-on-the-branch-on-which-all-of-the-developers-are-working-how-can-i-publish-my-changes)
-- [16. I created a commit and also pushed it. Is it possible to update that commit now?](#16-i-created-a-commit-and-also-pushed-it-is-it-possible-to-update-that-commit-now)
-- [17. I have created single/multiple commits. When I am trying to push my changes, getting a rejected message. I am stuck!!!](#17-i-have-created-singlemultiple-commits-when-i-am-trying-to-push-my-changes-getting-a-rejected-message-i-am-stuck)
-- [18. I followed the above steps but got conflicts after git pull.](#18-i-followed-the-above-steps-but-got-conflicts-after-git-pull)
-- [19. I have created single/multiple commits. When I am trying to push my changes, getting a rejected message. Can I pull the new changes without merging the commit (Rebase)?](#19-i-have-created-singlemultiple-commits-when-i-am-trying-to-push-my-changes-getting-a-rejected-message-can-i-pull-the-new-changes-without-merging-the-commit-rebase)
-- [20. I have raised a PR (Pull Request). But it is showing conflicts.](#20-i-have-raised-a-pr-pull-request-but-it-is-showing-conflicts)
-  * [Merge approach](#merge-approach)
-  * [Rebase approach](#rebase-approach)
-- [21. I have many commits. How can I transform them into a single commit (squash)?](#21-i-have-many-commits-how-can-i-transform-them-into-a-single-commit-squash)
-- [22. I have many commits. How can I transform them into a single commit (squash) with just commands?](#22-i-have-many-commits-how-can-i-transform-them-into-a-single-commit-squash-with-just-commands)
-- [23. I am trying to rebase my branch with the same or another branch. As I have many commits, I am getting a lot of conflicts on every commit to rebase.](#23-i-am-trying-to-rebase-my-branch-with-the-same-or-another-branch-as-i-have-many-commits-i-am-getting-a-lot-of-conflicts-on-every-commit-to-rebase)
-- [24. I have made changes and committed to a branch. I want to copy the same changes to another branch.](#24-i-have-made-changes-and-committed-to-a-branch-i-want-to-copy-the-same-changes-to-another-branch)
-- [25. I have tried to cherry-pick as shown in [24]. But I am getting conflicts.](#25-i-have-tried-to-cherry-pick-as-shown-in-24-but-i-am-getting-conflicts)
-- [26. I have multiple commits which I want to move to a different branch.](#26-i-have-multiple-commits-which-i-want-to-move-to-a-different-branch)
-- [27. I have pushed my changes and got it merged. I want to revert it immediately.](#27-i-have-pushed-my-changes-and-got-it-merged-i-want-to-revert-it-immediately)
-- [28. How do I reset the code of my branch to the code of a different branch?](#28-how-do-i-reset-the-code-of-my-branch-to-the-code-of-a-different-branch)
-- [29. I want to delete/undo the previous commit from my branch which I have already pushed. I am not looking for a revert. I just want to delete it.](#29-i-want-to-deleteundo-the-previous-commit-from-my-branch-which-i-have-already-pushed-i-am-not-looking-for-a-revert-i-just-want-to-delete-it)
+1. [I want to clone a project and start going through the code.](#1-i-want-to-clone-a-project-and-start-going-through-the-code)
+1. [I have cloned the repo. But I am not able to see the proper code!!!](#2-i-have-cloned-the-repo-but-i-am-not-able-to-see-the-proper-code)
+1. [Someone has made a few changes in the code and asked me to pull those changes. What should I do?](#3-someone-has-made-a-few-changes-in-the-code-and-asked-me-to-pull-those-changes-what-should-i-do)
+1. [I have modified the code and added changes. How do I commit my changes?](#4-i-have-modified-the-code-and-added-changes-how-do-i-commit-my-changes)
+1. [What if I want only some of my files added and pushed instead of all the changes?](#5-what-if-i-want-only-some-of-my-files-added-and-pushed-instead-of-all-the-changes)
+1. [I have modified/formatted some code while going through it. Now I want the code to be back to the state as it was.](#6-i-have-modifiedformatted-some-code-while-going-through-it-now-i-want-the-code-to-be-back-to-the-state-as-it-was)
+1. [I have committed my changes. How can I undo my change?](#7-i-have-committed-my-changes-how-can-i-undo-my-change)
+1. [I have made some changes to the branch. Also, I wanted to pull the new changes. But it is not working.](#8-i-have-made-some-changes-to-the-branch-also-i-wanted-to-pull-the-new-changes-but-it-is-not-working)
+1. [After applying the stash, I am getting a lot of conflicts in the code.](#9-after-applying-the-stash-i-am-getting-a-lot-of-conflicts-in-the-code)
+1. [I have made some code changes. But I want to commit to a new separate branch.](#10-i-have-made-some-code-changes-but-i-want-to-commit-to-a-new-separate-branch)
+1. [I just committed but forgot to add a few files to the commit. Is there a way to update the same commit with some modifications?](#11-i-just-committed-but-forgot-to-add-a-few-files-to-the-commit-is-there-a-way-to-update-the-same-commit-with-some-modifications)
+1. [I am asked to raise a Pull Request (PR) to a branch. What am I supposed to do?](#12-i-am-asked-to-raise-a-pull-request-pr-to-a-branch-what-am-i-supposed-to-do)
+1. [I do not want a branch anymore. How can I delete the branch?](#13-i-do-not-want-a-branch-anymore-how-can-i-delete-the-branch)
+1. [I want to rename my local and remote branches. How can I do it?](#14-i-want-to-rename-my-local-and-remote-branches-how-can-i-do-it)
+1. [I have made some changes to the code on the branch on which all of the developers are working. How can I publish my changes?](#15-i-have-made-some-changes-to-the-code-on-the-branch-on-which-all-of-the-developers-are-working-how-can-i-publish-my-changes)
+1. [I created a commit and also pushed it. Is it possible to update that commit now?](#16-i-created-a-commit-and-also-pushed-it-is-it-possible-to-update-that-commit-now)
+1. [I have created single/multiple commits. When I am trying to push my changes, getting a rejected message. I am stuck!!!](#17-i-have-created-singlemultiple-commits-when-i-am-trying-to-push-my-changes-getting-a-rejected-message-i-am-stuck)
+1. [I followed the above steps but got conflicts after git pull.](#18-i-followed-the-above-steps-but-got-conflicts-after-git-pull)
+1. [I have created single/multiple commits. When I am trying to push my changes, getting a rejected message. Can I pull the new changes without merging the commit (Rebase)?](#19-i-have-created-singlemultiple-commits-when-i-am-trying-to-push-my-changes-getting-a-rejected-message-can-i-pull-the-new-changes-without-merging-the-commit-rebase)
+1. [I have raised a PR (Pull Request). But it is showing conflicts.](#20-i-have-raised-a-pr-pull-request-but-it-is-showing-conflicts)
+1. [I have many commits. How can I transform them into a single commit (squash)?](#21-i-have-many-commits-how-can-i-transform-them-into-a-single-commit-squash)
+1. [I have many commits. How can I transform them into a single commit (squash) with just commands?](#22-i-have-many-commits-how-can-i-transform-them-into-a-single-commit-squash-with-just-commands)
+1. [I am trying to rebase my branch with the same or another branch. As I have many commits, I am getting a lot of conflicts on every commit to rebase.](#23-i-am-trying-to-rebase-my-branch-with-the-same-or-another-branch-as-i-have-many-commits-i-am-getting-a-lot-of-conflicts-on-every-commit-to-rebase)
+1. [I have made changes and committed to a branch. I want to copy the same changes to another branch.](#24-i-have-made-changes-and-committed-to-a-branch-i-want-to-copy-the-same-changes-to-another-branch)
+1. [I have tried to cherry-pick as shown in [24]. But I am getting conflicts.](#25-i-have-tried-to-cherry-pick-as-shown-in-24-but-i-am-getting-conflicts)
+1. [I have multiple commits which I want to move to a different branch.](#26-i-have-multiple-commits-which-i-want-to-move-to-a-different-branch)
+1. [I have pushed my changes and got it merged. I want to revert it immediately.](#27-i-have-pushed-my-changes-and-got-it-merged-i-want-to-revert-it-immediately)
+1. [How do I reset the code of my branch to the code of a different branch?](#28-how-do-i-reset-the-code-of-my-branch-to-the-code-of-a-different-branch)
+1. [I want to delete/undo the previous commit from my branch which I have already pushed. I am not looking for a revert. I just want to delete it.](#29-i-want-to-deleteundo-the-previous-commit-from-my-branch-which-i-have-already-pushed-i-am-not-looking-for-a-revert-i-just-want-to-delete-it)
 
 <br>
 
@@ -71,7 +69,6 @@ The repo URL can be found inside the repo.
 
 <b>Bitbucket repo link example</b>
 ![image](https://user-images.githubusercontent.com/12962887/182018164-7d2f6bcd-517e-4793-925d-afe61c39032c.png)
-
 
 <br>
 <br>
@@ -417,7 +414,7 @@ Note: If something goes wrong, in any of the above steps, then there is nothing 
 
 <img height="600px" src="https://user-images.githubusercontent.com/12962887/181507186-92a6c427-553c-4c1e-b87a-0394d23a1bad.png" alt="pr conflict" />
 
-PR will show conflicts if the new changes added to the source branch are conflicting with your changes or your branch is lagging. 
+PR will show conflicts if the new changes added to the source branch are conflicting with your changes or your branch is lagging.
 
 There are 2 main approaches to solve this.
 
