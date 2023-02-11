@@ -62,10 +62,10 @@
 
 The repo URL can be found inside the repo.
 
-<img width="905" alt="repo clone" src="https://user-images.githubusercontent.com/12962887/170861577-d7111658-96df-4b43-918b-2e2ab3395efd.png">
+<img width="850" alt="repo clone" src="https://user-images.githubusercontent.com/12962887/218247065-a1b39df3-172a-49ff-9cd0-3cc79f6fcf19.png">
 
 <b>Github repo link example</b>
-![image](https://user-images.githubusercontent.com/12962887/182018086-bea2688f-baf8-47ab-9d27-4c390355464f.png)
+![image](https://user-images.githubusercontent.com/12962887/218246901-42534808-73b0-497a-86fb-a05df1611e1b.png)
 
 <b>Bitbucket repo link example</b>
 ![image](https://user-images.githubusercontent.com/12962887/182018164-7d2f6bcd-517e-4793-925d-afe61c39032c.png)
