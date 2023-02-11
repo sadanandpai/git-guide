@@ -208,17 +208,20 @@ Below is the view of the VSCode, which helps in easily resolving the conflicts.
 
 You can create a separate branch out of the current branch and commit it. This works both if you have already made changes or are yet to start making changes.
 
-- Create a new branch `git checkout -b <my-branch-name>`
+- Create a new branch `git switch -c <my-branch-name>`
 - Stage all the changes `git add *`
 - Commit the changes `git commit -m "<some commit message>"`
 
 To switch between the branches use the command `git checkout <original-branch-name>`
 
-<img width="555" alt="branch out" src="https://user-images.githubusercontent.com/12962887/173236172-30ccb855-0b2c-47ae-a711-152f20bc3b67.png">
+<img width="631" alt="image" src="https://user-images.githubusercontent.com/12962887/218248599-d0f3e478-3684-4f29-8fb4-2eb492975109.png">
+
+Alternatively, **checkout** command can also be used to create the branch. `git checkout -b <my-branch-name>`
+
+<br>
 
 Note: `my-branch-name` is your local branch and not available for anyone else unless you push it
 
-<br>
 <br>
 
 ---
@@ -250,7 +253,7 @@ Note: The `amend` updates the previous commit without creating a new one on top 
 
 You can follow the same steps as given in the previous question. Once done you will push the code and raise a PR. It's that simple. Here we assume you are on the 'develop' branch and raising PR to the 'main' branch.
 
-- Create a new branch `git checkout -b <my-branch-name>`
+- Create a new branch `git switch -c <my-branch-name>`
 - Stage all the changes `git add *`
 - Commit the changes `git commit -m "<some commit message>"`
 - Push the changes `git push` (as the branch is not present on the remote, it will show the command to use)
