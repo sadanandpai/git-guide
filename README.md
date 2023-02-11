@@ -82,9 +82,13 @@ The repo URL can be found inside the repo.
 By default the main/master branch is active. Ask which branch has the relevant code
 
 - Navigate inside the cloned folder `cd repo<-name>`
-- Enter the command `git checkout <branch-name>`
+- Enter the command `git switch <branch-name>`
 
-<img width="619" alt="checkout" src="https://user-images.githubusercontent.com/12962887/180643741-f3f3fd37-a8d0-459e-b261-4fb4303f80d0.png">
+<img width="619" alt="checkout" src="https://user-images.githubusercontent.com/12962887/218248101-8253501b-4537-4b5c-98f3-71ae6f84c417.png">
+
+Note: The **checkout** command can also be used to switch the branch. `git checkout <branch-name>`
+<br>
+<br>
 
 ---
 
