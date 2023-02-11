@@ -10,7 +10,7 @@
   
   <img width="654" alt="image" src="https://user-images.githubusercontent.com/12962887/170864903-b331fc72-71f6-429b-81d4-b5cceb9d4b9f.png" />
   
-  <h4>Solutions to 80% of your daily git challenges</h4>
+  <h4>Solutions to 90% of your daily git challenges</h4>
   
   Show your support by giving a ⭐ to this repo
 </div>
